@@ -1,0 +1,8 @@
+---
+import AppLayout from '@/layouts/AppLayout.astro'
+import VocabularioClient from '@/components/VocabularioClient'
+---
+
+<AppLayout title="Vocabulario" activeNav="/vocabulario">
+  <VocabularioClient client:load />
+</AppLayout>

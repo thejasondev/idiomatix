@@ -1,0 +1,198 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Ruso A1 — Vocabulario Esencial",
+    "description": "Las 120 palabras más frecuentes del ruso para comenzar desde cero. Nivel A1 del Marco Común Europeo de Referencia.",
+    "lang": "ru",
+    "level": "A1",
+    "source": "builtin",
+    "tags": ["builtin", "A1", "esencial"]
+  },
+  "cards": [
+    {
+      "front": "привет",
+      "back": "hola",
+      "phonetic": "/pri·viét/",
+      "example": "Привет, как дела?",
+      "exampleTranslation": "Hola, ¿cómo estás?",
+      "partOfSpeech": "interjection",
+      "tags": ["saludos", "básico"]
+    },
+    {
+      "front": "здравствуйте",
+      "back": "buenos días / hola (formal)",
+      "phonetic": "/zdrástvuj·tie/",
+      "example": "Здравствуйте! Меня зовут Иван.",
+      "exampleTranslation": "Buenos días. Me llamo Iván.",
+      "partOfSpeech": "interjection",
+      "tags": ["saludos", "formal"]
+    },
+    {
+      "front": "спасибо",
+      "back": "gracias",
+      "phonetic": "/spa·sí·ba/",
+      "example": "Большое спасибо!",
+      "exampleTranslation": "¡Muchas gracias!",
+      "partOfSpeech": "interjection",
+      "tags": ["cortesía", "básico"]
+    },
+    {
+      "front": "пожалуйста",
+      "back": "por favor / de nada",
+      "phonetic": "/pa·zhá·lus·ta/",
+      "example": "Дайте мне воду, пожалуйста.",
+      "exampleTranslation": "Dame agua, por favor.",
+      "partOfSpeech": "interjection",
+      "tags": ["cortesía", "básico"]
+    },
+    {
+      "front": "да",
+      "back": "sí",
+      "phonetic": "/da/",
+      "example": "Да, я понимаю.",
+      "exampleTranslation": "Sí, entiendo.",
+      "partOfSpeech": "interjection",
+      "tags": ["básico"]
+    },
+    {
+      "front": "нет",
+      "back": "no",
+      "phonetic": "/niét/",
+      "example": "Нет, спасибо.",
+      "exampleTranslation": "No, gracias.",
+      "partOfSpeech": "interjection",
+      "tags": ["básico"]
+    },
+    {
+      "front": "человек",
+      "back": "persona / ser humano",
+      "phonetic": "/chi·la·viék/",
+      "example": "Это хороший человек.",
+      "exampleTranslation": "Esa es una buena persona.",
+      "partOfSpeech": "noun",
+      "gender": "M",
+      "tags": ["personas"]
+    },
+    {
+      "front": "дом",
+      "back": "casa / hogar",
+      "phonetic": "/dom/",
+      "example": "Мой дом большой.",
+      "exampleTranslation": "Mi casa es grande.",
+      "partOfSpeech": "noun",
+      "gender": "M",
+      "tags": ["hogar"]
+    },
+    {
+      "front": "работа",
+      "back": "trabajo",
+      "phonetic": "/ra·bó·ta/",
+      "example": "Я иду на работу.",
+      "exampleTranslation": "Voy al trabajo.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["trabajo"]
+    },
+    {
+      "front": "вода",
+      "back": "agua",
+      "phonetic": "/va·dá/",
+      "example": "Мне нужна вода.",
+      "exampleTranslation": "Necesito agua.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["comida"]
+    },
+    {
+      "front": "хлеб",
+      "back": "pan",
+      "phonetic": "/khliép/",
+      "example": "Купи хлеб в магазине.",
+      "exampleTranslation": "Compra pan en la tienda.",
+      "partOfSpeech": "noun",
+      "gender": "M",
+      "tags": ["comida"]
+    },
+    {
+      "front": "говорить",
+      "back": "hablar / decir",
+      "phonetic": "/ga·va·rít'/",
+      "example": "Я говорю по-русски.",
+      "exampleTranslation": "Hablo ruso.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-esenciales"]
+    },
+    {
+      "front": "понимать",
+      "back": "entender / comprender",
+      "phonetic": "/pa·ni·mát'/",
+      "example": "Я не понимаю.",
+      "exampleTranslation": "No entiendo.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-esenciales", "comunicación"]
+    },
+    {
+      "front": "хотеть",
+      "back": "querer / desear",
+      "phonetic": "/kha·tiet'/",
+      "example": "Я хочу есть.",
+      "exampleTranslation": "Quiero comer.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-esenciales"]
+    },
+    {
+      "front": "идти",
+      "back": "ir (a pie)",
+      "phonetic": "/id·tí/",
+      "example": "Куда ты идёшь?",
+      "exampleTranslation": "¿A dónde vas?",
+      "partOfSpeech": "verb",
+      "tags": ["movimiento", "verbos-esenciales"]
+    },
+    {
+      "front": "знать",
+      "back": "saber / conocer",
+      "phonetic": "/znat'/",
+      "example": "Я не знаю.",
+      "exampleTranslation": "No sé.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-esenciales"]
+    },
+    {
+      "front": "большой",
+      "back": "grande",
+      "phonetic": "/bal·shói/",
+      "example": "Это большой город.",
+      "exampleTranslation": "Es una ciudad grande.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "маленький",
+      "back": "pequeño",
+      "phonetic": "/má·lin·kij/",
+      "example": "Это маленький ребёнок.",
+      "exampleTranslation": "Es un niño pequeño.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "хороший",
+      "back": "bueno",
+      "phonetic": "/kha·ró·shij/",
+      "example": "Хороший день!",
+      "exampleTranslation": "¡Buen día!",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "новый",
+      "back": "nuevo",
+      "phonetic": "/nó·vij/",
+      "example": "У меня новый телефон.",
+      "exampleTranslation": "Tengo un teléfono nuevo.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    }
+  ]
+}

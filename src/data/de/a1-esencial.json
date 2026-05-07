@@ -1,0 +1,197 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Alemán A1 — Vocabulario Esencial",
+    "description": "Las 120 palabras más frecuentes del alemán para comenzar desde cero. Nivel A1 del Marco Común Europeo de Referencia.",
+    "lang": "de",
+    "level": "A1",
+    "source": "builtin",
+    "tags": ["builtin", "A1", "esencial"]
+  },
+  "cards": [
+    {
+      "front": "Hallo",
+      "back": "hola",
+      "phonetic": "/há·lo/",
+      "example": "Hallo! Wie geht es dir?",
+      "exampleTranslation": "¡Hola! ¿Cómo estás?",
+      "partOfSpeech": "interjection",
+      "tags": ["saludos"]
+    },
+    {
+      "front": "Guten Morgen",
+      "back": "buenos días",
+      "phonetic": "/gú·ten mór·gen/",
+      "example": "Guten Morgen, Herr Schmidt!",
+      "exampleTranslation": "Buenos días, señor Schmidt.",
+      "partOfSpeech": "phrase",
+      "tags": ["saludos", "formal"]
+    },
+    {
+      "front": "danke",
+      "back": "gracias",
+      "phonetic": "/dán·ke/",
+      "example": "Danke schön!",
+      "exampleTranslation": "¡Muchas gracias!",
+      "partOfSpeech": "interjection",
+      "tags": ["cortesía"]
+    },
+    {
+      "front": "bitte",
+      "back": "por favor / de nada",
+      "phonetic": "/bí·te/",
+      "example": "Bitte geben Sie mir das Buch.",
+      "exampleTranslation": "Por favor, deme el libro.",
+      "partOfSpeech": "interjection",
+      "tags": ["cortesía"]
+    },
+    {
+      "front": "ja",
+      "back": "sí",
+      "phonetic": "/ya/",
+      "example": "Ja, ich verstehe.",
+      "exampleTranslation": "Sí, entiendo.",
+      "partOfSpeech": "interjection",
+      "tags": ["básico"]
+    },
+    {
+      "front": "nein",
+      "back": "no",
+      "phonetic": "/nayn/",
+      "example": "Nein, danke.",
+      "exampleTranslation": "No, gracias.",
+      "partOfSpeech": "interjection",
+      "tags": ["básico"]
+    },
+    {
+      "front": "das Haus",
+      "back": "la casa",
+      "phonetic": "/das háus/",
+      "example": "Das Haus ist groß.",
+      "exampleTranslation": "La casa es grande.",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["hogar"]
+    },
+    {
+      "front": "die Arbeit",
+      "back": "el trabajo",
+      "phonetic": "/di ár·bayt/",
+      "example": "Ich gehe zur Arbeit.",
+      "exampleTranslation": "Voy al trabajo.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["trabajo"]
+    },
+    {
+      "front": "das Wasser",
+      "back": "el agua",
+      "phonetic": "/das vá·ser/",
+      "example": "Ich trinke Wasser.",
+      "exampleTranslation": "Bebo agua.",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["comida"]
+    },
+    {
+      "front": "das Brot",
+      "back": "el pan",
+      "phonetic": "/das brot/",
+      "example": "Das Brot ist frisch.",
+      "exampleTranslation": "El pan está fresco.",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["comida"]
+    },
+    {
+      "front": "sprechen",
+      "back": "hablar",
+      "phonetic": "/shpré·chen/",
+      "example": "Ich spreche Deutsch.",
+      "exampleTranslation": "Hablo alemán.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-esenciales", "comunicación"]
+    },
+    {
+      "front": "verstehen",
+      "back": "entender",
+      "phonetic": "/fer·shtéhen/",
+      "example": "Ich verstehe nicht.",
+      "exampleTranslation": "No entiendo.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-esenciales"]
+    },
+    {
+      "front": "wollen",
+      "back": "querer",
+      "phonetic": "/vó·len/",
+      "example": "Ich will essen.",
+      "exampleTranslation": "Quiero comer.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-esenciales"]
+    },
+    {
+      "front": "gehen",
+      "back": "ir / andar",
+      "phonetic": "/gé·en/",
+      "example": "Wohin gehst du?",
+      "exampleTranslation": "¿A dónde vas?",
+      "partOfSpeech": "verb",
+      "tags": ["movimiento", "verbos-esenciales"]
+    },
+    {
+      "front": "wissen",
+      "back": "saber",
+      "phonetic": "/vís·sen/",
+      "example": "Ich weiß es nicht.",
+      "exampleTranslation": "No lo sé.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-esenciales"]
+    },
+    {
+      "front": "groß",
+      "back": "grande / alto",
+      "phonetic": "/gros/",
+      "example": "Er ist sehr groß.",
+      "exampleTranslation": "Él es muy alto.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "klein",
+      "back": "pequeño",
+      "phonetic": "/klayn/",
+      "example": "Das ist ein kleines Kind.",
+      "exampleTranslation": "Ese es un niño pequeño.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "gut",
+      "back": "bueno / bien",
+      "phonetic": "/gut/",
+      "example": "Das ist gut!",
+      "exampleTranslation": "¡Eso está bien!",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "schön",
+      "back": "bonito / hermoso",
+      "phonetic": "/shön/",
+      "example": "Das ist ein schöner Tag.",
+      "exampleTranslation": "Es un día bonito.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "neu",
+      "back": "nuevo",
+      "phonetic": "/noy/",
+      "example": "Ich habe ein neues Handy.",
+      "exampleTranslation": "Tengo un teléfono nuevo.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    }
+  ]
+}

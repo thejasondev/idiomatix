@@ -1,0 +1,193 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Inglés A2 — Elemental",
+    "description": "Vocabulario elemental del inglés. Pasado simple, adjetivos descriptivos, rutinas diarias, lugares y expresiones de tiempo. Nivel A2 del MCER.",
+    "lang": "en",
+    "level": "A2",
+    "source": "builtin",
+    "tags": ["builtin", "A2", "elemental"]
+  },
+  "cards": [
+    {
+      "front": "wake up",
+      "back": "despertar(se)",
+      "phonetic": "/weɪk ʌp/",
+      "example": "I wake up at seven every day.",
+      "exampleTranslation": "Me despierto a las siete todos los días.",
+      "partOfSpeech": "phrase",
+      "tags": ["rutina", "phrasal verbs"]
+    },
+    {
+      "front": "start",
+      "back": "empezar / comenzar",
+      "phonetic": "/stɑːrt/",
+      "example": "School starts at eight o'clock.",
+      "exampleTranslation": "La escuela empieza a las ocho.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "tiempo"]
+    },
+    {
+      "front": "buy",
+      "back": "comprar",
+      "phonetic": "/baɪ/",
+      "example": "Where did you buy that shirt?",
+      "exampleTranslation": "¿Dónde compraste esa camisa?",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "compras"]
+    },
+    {
+      "front": "finish",
+      "back": "terminar / acabar",
+      "phonetic": "/ˈfɪnɪʃ/",
+      "example": "I finished work at six.",
+      "exampleTranslation": "Terminé el trabajo a las seis.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "tiempo"]
+    },
+    {
+      "front": "meet",
+      "back": "conocer / encontrarse con",
+      "phonetic": "/miːt/",
+      "example": "I met her at school.",
+      "exampleTranslation": "La conocí en la escuela.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "social"]
+    },
+    {
+      "front": "try",
+      "back": "intentar / probar",
+      "phonetic": "/traɪ/",
+      "example": "Try this food — it's delicious!",
+      "exampleTranslation": "Prueba esta comida, ¡está deliciosa!",
+      "partOfSpeech": "verb",
+      "tags": ["verbos"]
+    },
+    {
+      "front": "family",
+      "back": "familia",
+      "phonetic": "/ˈfæməli/",
+      "example": "My family lives in Havana.",
+      "exampleTranslation": "Mi familia vive en La Habana.",
+      "partOfSpeech": "noun",
+      "tags": ["familia"]
+    },
+    {
+      "front": "city",
+      "back": "ciudad",
+      "phonetic": "/ˈsɪti/",
+      "example": "Paris is a beautiful city.",
+      "exampleTranslation": "París es una ciudad bonita.",
+      "partOfSpeech": "noun",
+      "tags": ["lugares"]
+    },
+    {
+      "front": "weather",
+      "back": "tiempo (meteorológico)",
+      "phonetic": "/ˈwɛðər/",
+      "example": "The weather is nice today.",
+      "exampleTranslation": "El tiempo está agradable hoy.",
+      "partOfSpeech": "noun",
+      "tags": ["clima"]
+    },
+    {
+      "front": "supermarket",
+      "back": "supermercado",
+      "phonetic": "/ˈsuːpərˌmɑːrkɪt/",
+      "example": "I go to the supermarket every Saturday.",
+      "exampleTranslation": "Voy al supermercado cada sábado.",
+      "partOfSpeech": "noun",
+      "tags": ["lugares", "compras"]
+    },
+    {
+      "front": "street",
+      "back": "calle",
+      "phonetic": "/striːt/",
+      "example": "We live on this street.",
+      "exampleTranslation": "Vivimos en esta calle.",
+      "partOfSpeech": "noun",
+      "tags": ["lugares"]
+    },
+    {
+      "front": "warm",
+      "back": "cálido / templado",
+      "phonetic": "/wɔːrm/",
+      "example": "It's warm today.",
+      "exampleTranslation": "Hace calor hoy.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "clima"]
+    },
+    {
+      "front": "interesting",
+      "back": "interesante",
+      "phonetic": "/ˈɪntrəstɪŋ/",
+      "example": "That's a very interesting story.",
+      "exampleTranslation": "Esa es una historia muy interesante.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "free",
+      "back": "libre / gratis",
+      "phonetic": "/friː/",
+      "example": "Are you free on Friday?",
+      "exampleTranslation": "¿Estás libre el viernes?",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "tiempo"]
+    },
+    {
+      "front": "sometimes",
+      "back": "a veces",
+      "phonetic": "/ˈsʌmtaɪmz/",
+      "example": "Sometimes I go to the cinema.",
+      "exampleTranslation": "A veces voy al cine.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "frecuencia"]
+    },
+    {
+      "front": "always",
+      "back": "siempre",
+      "phonetic": "/ˈɔːlweɪz/",
+      "example": "I always drink coffee in the morning.",
+      "exampleTranslation": "Siempre tomo café por la mañana.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "frecuencia"]
+    },
+    {
+      "front": "never",
+      "back": "nunca",
+      "phonetic": "/ˈnɛvər/",
+      "example": "I never smoke.",
+      "exampleTranslation": "Nunca fumo.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "frecuencia"]
+    },
+    {
+      "front": "because",
+      "back": "porque",
+      "phonetic": "/bɪˈkɒz/",
+      "example": "I stayed home because I was sick.",
+      "exampleTranslation": "Me quedé en casa porque estaba enfermo.",
+      "partOfSpeech": "conjunction",
+      "tags": ["conectores", "gramática"]
+    },
+    {
+      "front": "since",
+      "back": "desde",
+      "phonetic": "/sɪns/",
+      "example": "I have lived here since 2020.",
+      "exampleTranslation": "Vivo aquí desde 2020.",
+      "partOfSpeech": "preposition",
+      "tags": ["preposiciones", "tiempo"]
+    },
+    {
+      "front": "so",
+      "back": "así que / entonces",
+      "phonetic": "/soʊ/",
+      "example": "It was raining, so I took a taxi.",
+      "exampleTranslation": "Estaba lloviendo, así que tomé un taxi.",
+      "partOfSpeech": "conjunction",
+      "tags": ["conectores"]
+    }
+  ]
+}

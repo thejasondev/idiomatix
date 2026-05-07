@@ -1,0 +1,151 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Ruso B1 — Intermedio",
+    "description": "Vocabulario intermedio del ruso. Amplía tu repertorio con verbos de aspecto, adjetivos complejos y frases cotidianas del nivel B1.",
+    "lang": "ru",
+    "level": "B1",
+    "source": "builtin",
+    "tags": ["builtin", "B1", "intermedio"]
+  },
+  "cards": [
+    {
+      "front": "возможность",
+      "back": "posibilidad / oportunidad",
+      "phonetic": "/vaz·mozh·nast'/",
+      "example": "У меня есть возможность поехать в Москву.",
+      "exampleTranslation": "Tengo la oportunidad de ir a Moscú.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["abstracto"]
+    },
+    {
+      "front": "развитие",
+      "back": "desarrollo / evolución",
+      "phonetic": "/ráz·vi·ti·ye/",
+      "example": "Развитие технологий идёт быстро.",
+      "exampleTranslation": "El desarrollo tecnológico avanza rápido.",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["abstracto", "tecnología"]
+    },
+    {
+      "front": "отношение",
+      "back": "relación / actitud",
+      "phonetic": "/at·na·shé·ni·ye/",
+      "example": "У нас хорошие отношения.",
+      "exampleTranslation": "Tenemos una buena relación.",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["social"]
+    },
+    {
+      "front": "поддерживать",
+      "back": "apoyar / mantener",
+      "phonetic": "/pad·dér·zhi·vat'/",
+      "example": "Я всегда поддерживаю своих друзей.",
+      "exampleTranslation": "Siempre apoyo a mis amigos.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "social"]
+    },
+    {
+      "front": "участвовать",
+      "back": "participar",
+      "phonetic": "/u·chást·va·vat'/",
+      "example": "Хочешь участвовать в соревновании?",
+      "exampleTranslation": "¿Quieres participar en la competición?",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "actividad"]
+    },
+    {
+      "front": "объяснять",
+      "back": "explicar",
+      "phonetic": "/ab·yis·nyát'/",
+      "example": "Объясните мне, пожалуйста.",
+      "exampleTranslation": "Explíqueme, por favor.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "comunicación"]
+    },
+    {
+      "front": "предлагать",
+      "back": "proponer / ofrecer",
+      "phonetic": "/prid·la·gát'/",
+      "example": "Я предлагаю другое решение.",
+      "exampleTranslation": "Propongo otra solución.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "comunicación"]
+    },
+    {
+      "front": "принимать решение",
+      "back": "tomar una decisión",
+      "phonetic": "/pri·ni·mát' ri·shé·ni·ye/",
+      "example": "Трудно принимать важные решения.",
+      "exampleTranslation": "Es difícil tomar decisiones importantes.",
+      "partOfSpeech": "phrase",
+      "tags": ["frases", "decisiones"]
+    },
+    {
+      "front": "несмотря на",
+      "back": "a pesar de",
+      "phonetic": "/nis·mat·ryá na/",
+      "example": "Несмотря на дождь, мы пошли гулять.",
+      "exampleTranslation": "A pesar de la lluvia, salimos a pasear.",
+      "partOfSpeech": "preposition",
+      "tags": ["conectores", "gramática"]
+    },
+    {
+      "front": "собственный",
+      "back": "propio / personal",
+      "phonetic": "/sób·stvin·nyj/",
+      "example": "У него собственный бизнес.",
+      "exampleTranslation": "Él tiene su propio negocio.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "современный",
+      "back": "moderno / contemporáneo",
+      "phonetic": "/sa·vrí·min·nyj/",
+      "example": "Это современный подход.",
+      "exampleTranslation": "Es un enfoque moderno.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "tiempo"]
+    },
+    {
+      "front": "успешный",
+      "back": "exitoso",
+      "phonetic": "/us·pésh·nyj/",
+      "example": "Проект был успешным.",
+      "exampleTranslation": "El proyecto fue exitoso.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "вероятно",
+      "back": "probablemente",
+      "phonetic": "/vi·ra·yát·na/",
+      "example": "Вероятно, он опоздает.",
+      "exampleTranslation": "Probablemente llegará tarde.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "probabilidad"]
+    },
+    {
+      "front": "впрочем",
+      "back": "sin embargo / aunque",
+      "phonetic": "/fprá·chim/",
+      "example": "Впрочем, это не важно.",
+      "exampleTranslation": "Sin embargo, no importa.",
+      "partOfSpeech": "conjunction",
+      "tags": ["conectores"]
+    },
+    {
+      "front": "в целом",
+      "back": "en general / en conjunto",
+      "phonetic": "/f tsé·lam/",
+      "example": "В целом результат хороший.",
+      "exampleTranslation": "En general, el resultado es bueno.",
+      "partOfSpeech": "phrase",
+      "tags": ["frases", "conectores"]
+    }
+  ]
+}

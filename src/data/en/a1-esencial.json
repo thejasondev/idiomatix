@@ -1,0 +1,193 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Inglés A1 — Vocabulario Esencial",
+    "description": "Las 120 palabras más frecuentes del inglés para comenzar desde cero. Nivel A1 del Marco Común Europeo de Referencia.",
+    "lang": "en",
+    "level": "A1",
+    "source": "builtin",
+    "tags": ["builtin", "A1", "esencial"]
+  },
+  "cards": [
+    {
+      "front": "hello",
+      "back": "hola",
+      "phonetic": "/həˈloʊ/",
+      "example": "Hello! How are you?",
+      "exampleTranslation": "¡Hola! ¿Cómo estás?",
+      "partOfSpeech": "interjection",
+      "tags": ["saludos"]
+    },
+    {
+      "front": "thank you",
+      "back": "gracias",
+      "phonetic": "/θæŋk juː/",
+      "example": "Thank you very much!",
+      "exampleTranslation": "¡Muchas gracias!",
+      "partOfSpeech": "phrase",
+      "tags": ["cortesía"]
+    },
+    {
+      "front": "please",
+      "back": "por favor",
+      "phonetic": "/pliːz/",
+      "example": "Can I have water, please?",
+      "exampleTranslation": "¿Me puedes dar agua, por favor?",
+      "partOfSpeech": "interjection",
+      "tags": ["cortesía"]
+    },
+    {
+      "front": "yes",
+      "back": "sí",
+      "phonetic": "/jɛs/",
+      "example": "Yes, I understand.",
+      "exampleTranslation": "Sí, entiendo.",
+      "partOfSpeech": "interjection",
+      "tags": ["básico"]
+    },
+    {
+      "front": "no",
+      "back": "no",
+      "phonetic": "/noʊ/",
+      "example": "No, thank you.",
+      "exampleTranslation": "No, gracias.",
+      "partOfSpeech": "interjection",
+      "tags": ["básico"]
+    },
+    {
+      "front": "house",
+      "back": "casa",
+      "phonetic": "/haʊs/",
+      "example": "My house is big.",
+      "exampleTranslation": "Mi casa es grande.",
+      "partOfSpeech": "noun",
+      "tags": ["hogar"]
+    },
+    {
+      "front": "water",
+      "back": "agua",
+      "phonetic": "/ˈwɔːtər/",
+      "example": "I drink water every day.",
+      "exampleTranslation": "Bebo agua todos los días.",
+      "partOfSpeech": "noun",
+      "tags": ["comida"]
+    },
+    {
+      "front": "food",
+      "back": "comida",
+      "phonetic": "/fuːd/",
+      "example": "I like Cuban food.",
+      "exampleTranslation": "Me gusta la comida cubana.",
+      "partOfSpeech": "noun",
+      "tags": ["comida"]
+    },
+    {
+      "front": "speak",
+      "back": "hablar",
+      "phonetic": "/spiːk/",
+      "example": "I speak English.",
+      "exampleTranslation": "Hablo inglés.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-esenciales", "comunicación"]
+    },
+    {
+      "front": "understand",
+      "back": "entender",
+      "phonetic": "/ˌʌndərˈstænd/",
+      "example": "I don't understand.",
+      "exampleTranslation": "No entiendo.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-esenciales"]
+    },
+    {
+      "front": "want",
+      "back": "querer",
+      "phonetic": "/wɒnt/",
+      "example": "I want to eat.",
+      "exampleTranslation": "Quiero comer.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-esenciales"]
+    },
+    {
+      "front": "go",
+      "back": "ir",
+      "phonetic": "/ɡoʊ/",
+      "example": "Where are you going?",
+      "exampleTranslation": "¿A dónde vas?",
+      "partOfSpeech": "verb",
+      "tags": ["movimiento", "verbos-esenciales"]
+    },
+    {
+      "front": "know",
+      "back": "saber / conocer",
+      "phonetic": "/noʊ/",
+      "example": "I don't know.",
+      "exampleTranslation": "No sé.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-esenciales"]
+    },
+    {
+      "front": "big",
+      "back": "grande",
+      "phonetic": "/bɪɡ/",
+      "example": "That's a big city.",
+      "exampleTranslation": "Esa es una ciudad grande.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "small",
+      "back": "pequeño",
+      "phonetic": "/smɔːl/",
+      "example": "It's a small village.",
+      "exampleTranslation": "Es un pueblo pequeño.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "good",
+      "back": "bueno",
+      "phonetic": "/ɡʊd/",
+      "example": "This is good food.",
+      "exampleTranslation": "Esta es buena comida.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "new",
+      "back": "nuevo",
+      "phonetic": "/njuː/",
+      "example": "I have a new phone.",
+      "exampleTranslation": "Tengo un teléfono nuevo.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "work",
+      "back": "trabajo / trabajar",
+      "phonetic": "/wɜːrk/",
+      "example": "I work every day.",
+      "exampleTranslation": "Trabajo todos los días.",
+      "partOfSpeech": "noun",
+      "tags": ["trabajo", "verbos-esenciales"]
+    },
+    {
+      "front": "time",
+      "back": "tiempo / hora",
+      "phonetic": "/taɪm/",
+      "example": "What time is it?",
+      "exampleTranslation": "¿Qué hora es?",
+      "partOfSpeech": "noun",
+      "tags": ["tiempo"]
+    },
+    {
+      "front": "day",
+      "back": "día",
+      "phonetic": "/deɪ/",
+      "example": "Have a good day!",
+      "exampleTranslation": "¡Que tengas un buen día!",
+      "partOfSpeech": "noun",
+      "tags": ["tiempo"]
+    }
+  ]
+}

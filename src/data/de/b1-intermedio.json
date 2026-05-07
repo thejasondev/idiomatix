@@ -1,0 +1,152 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Alemán B1 — Intermedio",
+    "description": "Vocabulario intermedio del alemán. Conectores, verbos modales avanzados, expresiones cotidianas y vocabulario temático del nivel B1.",
+    "lang": "de",
+    "level": "B1",
+    "source": "builtin",
+    "tags": ["builtin", "B1", "intermedio"]
+  },
+  "cards": [
+    {
+      "front": "die Möglichkeit",
+      "back": "la posibilidad / la oportunidad",
+      "phonetic": "/di mög·lich·kayt/",
+      "example": "Es gibt viele Möglichkeiten.",
+      "exampleTranslation": "Hay muchas posibilidades.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["abstracto"]
+    },
+    {
+      "front": "die Entwicklung",
+      "back": "el desarrollo / la evolución",
+      "phonetic": "/di ent·vik·lung/",
+      "example": "Die technische Entwicklung ist beeindruckend.",
+      "exampleTranslation": "El desarrollo técnico es impresionante.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["abstracto", "tecnología"]
+    },
+    {
+      "front": "die Beziehung",
+      "back": "la relación",
+      "phonetic": "/di be·tsí·hung/",
+      "example": "Wir haben eine gute Beziehung.",
+      "exampleTranslation": "Tenemos una buena relación.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["social"]
+    },
+    {
+      "front": "unterstützen",
+      "back": "apoyar / respaldar",
+      "phonetic": "/un·ter·shtüt·sen/",
+      "example": "Ich unterstütze dich immer.",
+      "exampleTranslation": "Siempre te apoyo.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "social"]
+    },
+    {
+      "front": "teilnehmen",
+      "back": "participar",
+      "phonetic": "/tayl·ney·men/",
+      "example": "Ich möchte am Kurs teilnehmen.",
+      "exampleTranslation": "Me gustaría participar en el curso.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "actividad"]
+    },
+    {
+      "front": "erklären",
+      "back": "explicar / declarar",
+      "phonetic": "/er·klé·ren/",
+      "example": "Können Sie das erklären?",
+      "exampleTranslation": "¿Puede explicar eso?",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "comunicación"]
+    },
+    {
+      "front": "vorschlagen",
+      "back": "proponer / sugerir",
+      "phonetic": "/fór·shla·gen/",
+      "example": "Ich schlage einen anderen Weg vor.",
+      "exampleTranslation": "Propongo otro camino.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "comunicación"]
+    },
+    {
+      "front": "obwohl",
+      "back": "aunque / a pesar de que",
+      "phonetic": "/op·vól/",
+      "example": "Obwohl es regnet, gehen wir spazieren.",
+      "exampleTranslation": "Aunque llueve, salimos a pasear.",
+      "partOfSpeech": "conjunction",
+      "tags": ["conectores", "gramática"]
+    },
+    {
+      "front": "trotzdem",
+      "back": "de todas formas / sin embargo",
+      "phonetic": "/tróts·dem/",
+      "example": "Es ist schwer, trotzdem versuche ich es.",
+      "exampleTranslation": "Es difícil, pero de todas formas lo intento.",
+      "partOfSpeech": "adverb",
+      "tags": ["conectores"]
+    },
+    {
+      "front": "eigentlich",
+      "back": "en realidad / realmente",
+      "phonetic": "/áy·gent·lich/",
+      "example": "Eigentlich wollte ich früher kommen.",
+      "exampleTranslation": "En realidad quería venir antes.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "matizadores"]
+    },
+    {
+      "front": "außerdem",
+      "back": "además / aparte de eso",
+      "phonetic": "/áu·ser·dem/",
+      "example": "Er ist klug und außerdem sehr freundlich.",
+      "exampleTranslation": "Es inteligente y además muy amable.",
+      "partOfSpeech": "adverb",
+      "tags": ["conectores"]
+    },
+    {
+      "front": "wahrscheinlich",
+      "back": "probablemente / seguramente",
+      "phonetic": "/vár·shayn·lich/",
+      "example": "Er kommt wahrscheinlich zu spät.",
+      "exampleTranslation": "Probablemente llegará tarde.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "probabilidad"]
+    },
+    {
+      "front": "selbstständig",
+      "back": "independiente / autónomo",
+      "phonetic": "/zélbst·shten·dich/",
+      "example": "Sie arbeitet selbstständig.",
+      "exampleTranslation": "Trabaja de forma independiente.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "trabajo"]
+    },
+    {
+      "front": "der Unterschied",
+      "back": "la diferencia",
+      "phonetic": "/der un·ter·sheed/",
+      "example": "Was ist der Unterschied zwischen diesen Wörtern?",
+      "exampleTranslation": "¿Cuál es la diferencia entre estas palabras?",
+      "partOfSpeech": "noun",
+      "gender": "M",
+      "tags": ["abstracto"]
+    },
+    {
+      "front": "insgesamt",
+      "back": "en total / en conjunto",
+      "phonetic": "/ins·ge·zamt/",
+      "example": "Insgesamt war es ein guter Tag.",
+      "exampleTranslation": "En conjunto fue un buen día.",
+      "partOfSpeech": "adverb",
+      "tags": ["conectores", "resumen"]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Alemán A2 — Elemental",
+    "description": "Vocabulario elemental del alemán. Verbos separables, preposiciones con acusativo y dativo, vida cotidiana y descripciones. Nivel A2 del MCER.",
+    "lang": "de",
+    "level": "A2",
+    "source": "builtin",
+    "tags": ["builtin", "A2", "elemental"]
+  },
+  "cards": [
+    {
+      "front": "aufstehen",
+      "back": "levantarse",
+      "phonetic": "/áuf·shtehen/",
+      "example": "Ich stehe um sieben Uhr auf.",
+      "exampleTranslation": "Me levanto a las siete.",
+      "partOfSpeech": "verb",
+      "tags": ["rutina", "verbos-separables"]
+    },
+    {
+      "front": "anfangen",
+      "back": "empezar / comenzar",
+      "phonetic": "/án·fangen/",
+      "example": "Der Unterricht fängt um acht an.",
+      "exampleTranslation": "La clase empieza a las ocho.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-separables", "tiempo"]
+    },
+    {
+      "front": "einkaufen",
+      "back": "hacer la compra / comprar",
+      "phonetic": "/áyn·kaufen/",
+      "example": "Ich kaufe jeden Tag ein.",
+      "exampleTranslation": "Hago la compra todos los días.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-separables", "compras"]
+    },
+    {
+      "front": "anrufen",
+      "back": "llamar por teléfono",
+      "phonetic": "/án·rufen/",
+      "example": "Ich rufe dich morgen an.",
+      "exampleTranslation": "Te llamo mañana.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-separables", "comunicación"]
+    },
+    {
+      "front": "aufhören",
+      "back": "parar / dejar de",
+      "phonetic": "/áuf·hören/",
+      "example": "Hör auf zu rauchen!",
+      "exampleTranslation": "¡Deja de fumar!",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-separables"]
+    },
+    {
+      "front": "kennenlernen",
+      "back": "conocer (a alguien)",
+      "phonetic": "/kén·nen·lernen/",
+      "example": "Wo hast du ihn kennengelernt?",
+      "exampleTranslation": "¿Dónde lo conociste?",
+      "partOfSpeech": "verb",
+      "tags": ["verbos-separables", "social"]
+    },
+    {
+      "front": "die Familie",
+      "back": "la familia",
+      "phonetic": "/di fa·mí·lie/",
+      "example": "Meine Familie ist sehr groß.",
+      "exampleTranslation": "Mi familia es muy grande.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["familia"]
+    },
+    {
+      "front": "die Stadt",
+      "back": "la ciudad",
+      "phonetic": "/di shtat/",
+      "example": "Berlin ist eine schöne Stadt.",
+      "exampleTranslation": "Berlín es una ciudad bonita.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["lugares"]
+    },
+    {
+      "front": "das Wetter",
+      "back": "el tiempo (meteorológico)",
+      "phonetic": "/das vé·ter/",
+      "example": "Das Wetter ist heute schlecht.",
+      "exampleTranslation": "El tiempo hoy está malo.",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["clima"]
+    },
+    {
+      "front": "die Straße",
+      "back": "la calle / la carretera",
+      "phonetic": "/di shtrá·se/",
+      "example": "Wir wohnen in dieser Straße.",
+      "exampleTranslation": "Vivimos en esta calle.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["lugares"]
+    },
+    {
+      "front": "der Supermarkt",
+      "back": "el supermercado",
+      "phonetic": "/der zú·per·markt/",
+      "example": "Der Supermarkt öffnet um acht.",
+      "exampleTranslation": "El supermercado abre a las ocho.",
+      "partOfSpeech": "noun",
+      "gender": "M",
+      "tags": ["lugares", "compras"]
+    },
+    {
+      "front": "warm",
+      "back": "cálido / caliente",
+      "phonetic": "/varm/",
+      "example": "Das Wetter ist heute warm.",
+      "exampleTranslation": "El tiempo hoy está cálido.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "clima"]
+    },
+    {
+      "front": "interessant",
+      "back": "interesante",
+      "phonetic": "/in·te·re·sánt/",
+      "example": "Das ist ein interessantes Buch.",
+      "exampleTranslation": "Es un libro interesante.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "frei",
+      "back": "libre / gratis",
+      "phonetic": "/fray/",
+      "example": "Bist du am Freitag frei?",
+      "exampleTranslation": "¿Estás libre el viernes?",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "tiempo"]
+    },
+    {
+      "front": "manchmal",
+      "back": "a veces",
+      "phonetic": "/mánch·mal/",
+      "example": "Manchmal gehe ich ins Kino.",
+      "exampleTranslation": "A veces voy al cine.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "frecuencia"]
+    },
+    {
+      "front": "immer",
+      "back": "siempre",
+      "phonetic": "/í·mer/",
+      "example": "Ich trinke immer Kaffee am Morgen.",
+      "exampleTranslation": "Siempre tomo café por la mañana.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "frecuencia"]
+    },
+    {
+      "front": "nie / niemals",
+      "back": "nunca",
+      "phonetic": "/ni / ní·mals/",
+      "example": "Ich rauche nie.",
+      "exampleTranslation": "Nunca fumo.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "frecuencia"]
+    },
+    {
+      "front": "weil",
+      "back": "porque",
+      "phonetic": "/vayl/",
+      "example": "Ich bin zu Hause, weil ich krank bin.",
+      "exampleTranslation": "Estoy en casa porque estoy enfermo.",
+      "partOfSpeech": "conjunction",
+      "tags": ["conectores", "gramática"]
+    },
+    {
+      "front": "seit",
+      "back": "desde (hace)",
+      "phonetic": "/zayt/",
+      "example": "Ich lerne seit zwei Jahren Deutsch.",
+      "exampleTranslation": "Llevo dos años aprendiendo alemán.",
+      "partOfSpeech": "preposition",
+      "tags": ["preposiciones", "tiempo"]
+    },
+    {
+      "front": "deshalb",
+      "back": "por eso / por esa razón",
+      "phonetic": "/dés·halb/",
+      "example": "Es regnet, deshalb bleibe ich zu Hause.",
+      "exampleTranslation": "Llueve, por eso me quedo en casa.",
+      "partOfSpeech": "adverb",
+      "tags": ["conectores"]
+    }
+  ]
+}

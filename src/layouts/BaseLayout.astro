@@ -1,0 +1,64 @@
+---
+// BaseLayout.astro — Shell HTML con meta, PWA, theme init
+interface Props {
+  title?: string
+  description?: string
+}
+
+const {
+  title = 'Idiomatix',
+  description = 'Tu plataforma personal de aprendizaje de idiomas. Offline-first.',
+} = Astro.props
+---
+
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#0D0F12" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F8FAFC" media="(prefers-color-scheme: light)" />
+
+    <!-- PWA -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Idiomatix" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>{title === 'Idiomatix' ? 'Idiomatix' : `${title} · Idiomatix`}</title>
+
+    <!-- Preconnect fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Theme init script — runs before first paint to avoid flash -->
+    <script is:inline>
+      ;(function () {
+        try {
+          var stored = localStorage.getItem('idiomatix-ui')
+          var parsed = stored ? JSON.parse(stored) : null
+          var theme = parsed?.state?.theme ?? 'dark'
+          var resolved = theme === 'system'
+            ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+            : theme
+          document.documentElement.setAttribute('data-theme', resolved)
+        } catch (_) {
+          document.documentElement.setAttribute('data-theme', 'dark')
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

@@ -1,0 +1,33 @@
+{
+  "name": "idiomatix",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PWA de aprendizaje de idiomas — offline-first, dark-first",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.6.0",
+    "astro": "^5.0.0",
+    "dexie": "^4.0.8",
+    "dexie-react-hooks": "^1.1.7",
+    "lucide-react": "^0.454.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.7.0",
+    "vite-plugin-pwa": "^0.21.0"
+  }
+}

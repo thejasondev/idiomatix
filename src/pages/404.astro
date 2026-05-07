@@ -1,0 +1,78 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'
+---
+
+<BaseLayout title="Página no encontrada">
+  <div class="not-found">
+    <div class="nf-content">
+      <p class="nf-code">404</p>
+      <h1 class="nf-title">Página no encontrada</h1>
+      <p class="nf-desc">La página que buscas no existe o fue movida.</p>
+      <a href="/" class="nf-btn">Volver al inicio</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    padding: 2rem;
+    background: var(--bg-base);
+  }
+
+  .nf-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    animation: fadeIn 400ms ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .nf-code {
+    font-family: var(--font-mono);
+    font-size: 5rem;
+    font-weight: 500;
+    color: var(--border-strong);
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+  .nf-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .nf-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    max-width: 260px;
+    line-height: 1.5;
+  }
+
+  .nf-btn {
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 24px;
+    background: var(--verdant-600);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 150ms;
+  }
+
+  .nf-btn:hover { background: var(--verdant-500); }
+</style>

@@ -1,0 +1,198 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Ruso A2 — Elemental",
+    "description": "Vocabulario elemental del ruso. Verbos de movimiento, adjetivos de descripción personal, tiempo y lugares cotidianos. Nivel A2 del MCER.",
+    "lang": "ru",
+    "level": "A2",
+    "source": "builtin",
+    "tags": ["builtin", "A2", "elemental"]
+  },
+  "cards": [
+    {
+      "front": "ехать",
+      "back": "ir (en vehículo)",
+      "phonetic": "/yé·khat'/",
+      "example": "Я еду на работу на метро.",
+      "exampleTranslation": "Voy al trabajo en metro.",
+      "partOfSpeech": "verb",
+      "tags": ["movimiento", "verbos"]
+    },
+    {
+      "front": "приходить",
+      "back": "llegar / venir (a pie)",
+      "phonetic": "/pri·kha·dít'/",
+      "example": "Он приходит домой поздно.",
+      "exampleTranslation": "Él llega a casa tarde.",
+      "partOfSpeech": "verb",
+      "tags": ["movimiento", "verbos"]
+    },
+    {
+      "front": "начинать",
+      "back": "empezar / comenzar",
+      "phonetic": "/na·chi·nát'/",
+      "example": "Я начинаю работать в девять.",
+      "exampleTranslation": "Empiezo a trabajar a las nueve.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "tiempo"]
+    },
+    {
+      "front": "заканчивать",
+      "back": "terminar / acabar",
+      "phonetic": "/za·kán·chi·vat'/",
+      "example": "Мы заканчиваем в шесть.",
+      "exampleTranslation": "Terminamos a las seis.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "tiempo"]
+    },
+    {
+      "front": "покупать",
+      "back": "comprar",
+      "phonetic": "/pa·ku·pát'/",
+      "example": "Где ты покупаешь продукты?",
+      "exampleTranslation": "¿Dónde compras los alimentos?",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "compras"]
+    },
+    {
+      "front": "продавать",
+      "back": "vender",
+      "phonetic": "/pra·da·vát'/",
+      "example": "Они продают свежие фрукты.",
+      "exampleTranslation": "Venden fruta fresca.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "compras"]
+    },
+    {
+      "front": "отдыхать",
+      "back": "descansar",
+      "phonetic": "/at·di·khát'/",
+      "example": "Мы отдыхаем в воскресенье.",
+      "exampleTranslation": "Descansamos el domingo.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "tiempo libre"]
+    },
+    {
+      "front": "рассказывать",
+      "back": "contar / narrar",
+      "phonetic": "/ras·ká·zi·vat'/",
+      "example": "Расскажи мне о своей семье.",
+      "exampleTranslation": "Cuéntame sobre tu familia.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "comunicación"]
+    },
+    {
+      "front": "семья",
+      "back": "familia",
+      "phonetic": "/sim·yá/",
+      "example": "Моя семья живёт в Гаване.",
+      "exampleTranslation": "Mi familia vive en La Habana.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["familia"]
+    },
+    {
+      "front": "город",
+      "back": "ciudad",
+      "phonetic": "/gó·rat/",
+      "example": "Это очень красивый город.",
+      "exampleTranslation": "Es una ciudad muy bonita.",
+      "partOfSpeech": "noun",
+      "gender": "M",
+      "tags": ["lugares"]
+    },
+    {
+      "front": "магазин",
+      "back": "tienda / almacén",
+      "phonetic": "/ma·ga·zín/",
+      "example": "Магазин открыт до девяти.",
+      "exampleTranslation": "La tienda está abierta hasta las nueve.",
+      "partOfSpeech": "noun",
+      "gender": "M",
+      "tags": ["lugares", "compras"]
+    },
+    {
+      "front": "улица",
+      "back": "calle",
+      "phonetic": "/ú·li·tsa/",
+      "example": "Мы живём на этой улице.",
+      "exampleTranslation": "Vivimos en esta calle.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["lugares"]
+    },
+    {
+      "front": "погода",
+      "back": "tiempo (meteorológico)",
+      "phonetic": "/pa·gó·da/",
+      "example": "Какая погода сегодня?",
+      "exampleTranslation": "¿Qué tiempo hace hoy?",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["clima"]
+    },
+    {
+      "front": "тёплый",
+      "back": "cálido / templado",
+      "phonetic": "/tyóp·lyj/",
+      "example": "Сегодня тёплый день.",
+      "exampleTranslation": "Hoy es un día cálido.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "clima"]
+    },
+    {
+      "front": "интересный",
+      "back": "interesante",
+      "phonetic": "/in·ti·rés·nyj/",
+      "example": "Это очень интересная книга.",
+      "exampleTranslation": "Es un libro muy interesante.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "свободный",
+      "back": "libre / disponible",
+      "phonetic": "/sva·bód·nyj/",
+      "example": "Ты свободен в пятницу?",
+      "exampleTranslation": "¿Estás libre el viernes?",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "tiempo"]
+    },
+    {
+      "front": "иногда",
+      "back": "a veces",
+      "phonetic": "/i·nag·dá/",
+      "example": "Иногда я хожу в кино.",
+      "exampleTranslation": "A veces voy al cine.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "frecuencia"]
+    },
+    {
+      "front": "всегда",
+      "back": "siempre",
+      "phonetic": "/fsig·dá/",
+      "example": "Я всегда пью кофе утром.",
+      "exampleTranslation": "Siempre tomo café por la mañana.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "frecuencia"]
+    },
+    {
+      "front": "никогда",
+      "back": "nunca",
+      "phonetic": "/ni·kag·dá/",
+      "example": "Я никогда не курил.",
+      "exampleTranslation": "Nunca he fumado.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "frecuencia"]
+    },
+    {
+      "front": "потому что",
+      "back": "porque",
+      "phonetic": "/pa·ta·mú shta/",
+      "example": "Я остался дома, потому что болен.",
+      "exampleTranslation": "Me quedé en casa porque estoy enfermo.",
+      "partOfSpeech": "conjunction",
+      "tags": ["conectores", "gramática"]
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap');
+
+  :root {
+    --font-display: 'DM Serif Display', serif;
+    --font-body: 'Outfit', sans-serif;
+    --font-mono: 'DM Mono', monospace;
+
+    --ink-950: #0D0F12;
+    --ink-900: #13161B;
+    --ink-800: #1C2028;
+    --ink-700: #252B36;
+    --ink-600: #333C4A;
+    --ink-500: #4A5568;
+    --ink-400: #64748B;
+    --ink-300: #94A3B8;
+    --ink-200: #CBD5E1;
+    --ink-100: #E2E8F0;
+    --ink-50:  #F8FAFC;
+
+    --verdant-500: #2DD4BF;
+    --verdant-400: #5EEAD4;
+    --verdant-300: #99F6E4;
+    --verdant-600: #0D9488;
+    --verdant-700: #0F766E;
+
+    --ember-500: #FB923C;
+    --ember-400: #FDBA74;
+    --ember-300: #FED7AA;
+    --ember-600: #EA580C;
+
+    --lucid-500: #818CF8;
+    --lucid-400: #A5B4FC;
+    --lucid-300: #C7D2FE;
+    --lucid-600: #6366F1;
+
+    --crimson-500: #F87171;
+    --crimson-400: #FCA5A5;
+
+    --gold-500: #FBBF24;
+    --gold-400: #FCD34D;
+
+    --surface-0: var(--ink-950);
+    --surface-1: var(--ink-900);
+    --surface-2: var(--ink-800);
+    --surface-3: var(--ink-700);
+    --border-subtle: rgba(255,255,255,0.06);
+    --border-default: rgba(255,255,255,0.10);
+    --border-strong: rgba(255,255,255,0.18);
+    --text-primary: #F1F5F9;
+    --text-secondary: #94A3B8;
+    --text-muted: #4A5568;
+    --accent: var(--verdant-500);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  
+  .ds-root {
+    background: var(--surface-0);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    padding: 2rem 1.5rem;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+
+  .ds-header {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.5px solid var(--border-subtle);
+  }
+
+  .wordmark {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    letter-spacing: -0.01em;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+  }
+
+  .wordmark em {
+    font-style: italic;
+    color: var(--verdant-500);
+  }
+
+  .ds-subtitle {
+    font-size: 13px;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .section-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 12px;
+    font-family: var(--font-mono);
+  }
+
+  .ds-section { margin-bottom: 2.5rem; }
+
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 8px;
+  }
+
+  .color-chip {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 0.5px solid var(--border-subtle);
+  }
+
+  .chip-swatch { height: 52px; }
+  .chip-info { padding: 8px 10px; background: var(--surface-2); }
+  .chip-name { font-size: 11px; font-weight: 500; color: var(--text-primary); }
+  .chip-hex { font-size: 10px; color: var(--text-muted); font-family: var(--font-mono); margin-top: 2px; }
+  .chip-role { font-size: 10px; color: var(--text-secondary); margin-top: 2px; }
+
+  .type-specimen { display: flex; flex-direction: column; gap: 16px; }
+  
+  .type-row {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    padding-bottom: 16px;
+    border-bottom: 0.5px solid var(--border-subtle);
+  }
+  .type-row:last-child { border-bottom: none; }
+  
+  .type-meta { 
+    min-width: 120px; 
+    font-family: var(--font-mono); 
+    font-size: 10px; 
+    color: var(--text-muted); 
+    line-height: 1.4;
+    flex-shrink: 0;
+  }
+  .type-preview { flex: 1; min-width: 0; }
+
+  .t-display { font-family: var(--font-display); font-size: 2rem; color: var(--text-primary); line-height: 1.1; }
+  .t-display-i { font-family: var(--font-display); font-size: 2rem; color: var(--verdant-500); line-height: 1.1; font-style: italic; }
+  .t-h1 { font-family: var(--font-body); font-size: 1.5rem; font-weight: 600; color: var(--text-primary); }
+  .t-h2 { font-family: var(--font-body); font-size: 1.1rem; font-weight: 500; color: var(--text-primary); }
+  .t-body { font-family: var(--font-body); font-size: 0.9rem; font-weight: 400; color: var(--text-secondary); }
+  .t-mono { font-family: var(--font-mono); font-size: 0.82rem; color: var(--verdant-400); }
+  .t-label { font-family: var(--font-body); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+
+  .cyrillic-sample { 
+    font-family: var(--font-body); 
+    font-size: 1.1rem; 
+    color: var(--text-primary); 
+    padding: 12px 16px;
+    background: var(--surface-2);
+    border-radius: 8px;
+    border-left: 2px solid var(--verdant-600);
+    line-height: 1.8;
+  }
+
+  .component-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  @media (max-width: 520px) { .component-grid { grid-template-columns: 1fr; } }
+
+  .comp-card {
+    background: var(--surface-1);
+    border: 0.5px solid var(--border-default);
+    border-radius: 14px;
+    padding: 1.25rem;
+  }
+  .comp-title { font-size: 11px; font-family: var(--font-mono); color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+
+  .btn-primary {
+    background: var(--verdant-500);
+    color: #0D0F12;
+    border: none;
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+  .btn-ghost {
+    background: transparent;
+    color: var(--text-primary);
+    border: 0.5px solid var(--border-strong);
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+  .btn-danger {
+    background: transparent;
+    color: var(--crimson-500);
+    border: 0.5px solid var(--crimson-500);
+    padding: 9px 20px;
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-bottom: 8px;
+    display: inline-block;
+  }
+
+  .badge-row { display: flex; flex-wrap: wrap; gap: 6px; }
+  .badge {
+    font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 20px;
+    font-family: var(--font-body);
+  }
+  .badge-ru { background: rgba(251,146,60,0.15); color: var(--ember-400); border: 0.5px solid rgba(251,146,60,0.25); }
+  .badge-de { background: rgba(251,191,36,0.12); color: var(--gold-400); border: 0.5px solid rgba(251,191,36,0.2); }
+  .badge-en { background: rgba(129,140,248,0.15); color: var(--lucid-400); border: 0.5px solid rgba(129,140,248,0.25); }
+  .badge-done { background: rgba(45,212,191,0.1); color: var(--verdant-400); border: 0.5px solid rgba(45,212,191,0.2); }
+  .badge-new { background: rgba(248,113,113,0.1); color: var(--crimson-400); border: 0.5px solid rgba(248,113,113,0.2); }
+  .badge-level { background: rgba(255,255,255,0.06); color: var(--text-secondary); border: 0.5px solid var(--border-default); }
+
+  .flashcard-preview {
+    background: var(--surface-2);
+    border: 0.5px solid var(--border-default);
+    border-radius: 16px;
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .fc-lang-tag {
+    position: absolute; top: 12px; left: 12px;
+    font-size: 10px; font-family: var(--font-mono);
+    color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 0.08em;
+  }
+  .fc-word { font-family: var(--font-display); font-size: 1.8rem; color: var(--text-primary); margin-bottom: 4px; }
+  .fc-phonetic { font-family: var(--font-mono); font-size: 12px; color: var(--verdant-400); margin-bottom: 12px; }
+  .fc-divider { width: 32px; height: 1px; background: var(--border-default); margin: 12px auto; }
+  .fc-translation { font-size: 14px; color: var(--text-secondary); }
+  .fc-rating-row { display: flex; gap: 8px; justify-content: center; margin-top: 16px; }
+  .rating-btn {
+    flex: 1; max-width: 80px; padding: 7px 0; border-radius: 8px; border: none;
+    font-size: 12px; font-weight: 500; font-family: var(--font-body); cursor: pointer;
+  }
+  .r-hard { background: rgba(248,113,113,0.15); color: var(--crimson-400); }
+  .r-ok   { background: rgba(251,191,36,0.12); color: var(--gold-400); }
+  .r-easy { background: rgba(45,212,191,0.12); color: var(--verdant-400); }
+
+  .progress-bar-track {
+    background: var(--surface-3); border-radius: 99px; height: 6px; overflow: hidden; margin-bottom: 6px;
+  }
+  .progress-bar-fill {
+    height: 100%; border-radius: 99px;
+    background: linear-gradient(90deg, var(--verdant-600), var(--verdant-400));
+    transition: width 0.3s ease;
+  }
+  .progress-meta { display: flex; justify-content: space-between; font-size: 11px; color: var(--text-muted); font-family: var(--font-mono); }
+
+  .light-variant {
+    background: #F8FAFC;
+    border: 0.5px solid #E2E8F0;
+    border-radius: 14px;
+    padding: 1.25rem;
+  }
+  .lv-title { font-size: 11px; font-family: 'DM Mono', monospace; color: #94A3B8; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .lv-card { background: #fff; border: 0.5px solid #E2E8F0; border-radius: 12px; padding: 1rem; }
+  .lv-word { font-family: 'DM Serif Display', serif; font-size: 1.5rem; color: #0F172A; }
+  .lv-phonetic { font-family: 'DM Mono', monospace; font-size: 12px; color: #0D9488; margin-bottom: 8px; }
+  .lv-tr { font-size: 13px; color: #64748B; }
+  .lv-badge-ru { background: #FFF3E8; color: #C2410C; font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 500; display: inline-block; margin-bottom: 8px; }
+
+</style>
+
+<div class="ds-root">
+  <h2 class="sr-only">Idiomatix — Sistema de diseño completo: paleta, tipografía, componentes</h2>
+
+  <div class="ds-header">
+    <div class="wordmark">Idiom<em>atix</em></div>
+    <p class="ds-subtitle">Design system · v1.0 · dark-first</p>
+  </div>
+
+  <div class="ds-section">
+    <p class="section-label">Paleta · Dark mode</p>
+    <div class="color-grid">
+      <div class="color-chip">
+        <div class="chip-swatch" style="background:#0D0F12"></div>
+        <div class="chip-info"><div class="chip-name">Ink 950</div><div class="chip-hex">#0D0F12</div><div class="chip-role">bg base</div></div>
+      </div>
+      <div class="color-chip">
+        <div class="chip-swatch" style="background:#13161B"></div>
+        <div class="chip-info"><div class="chip-name">Ink 900</div><div class="chip-hex">#13161B</div><div class="chip-role">superficie</div></div>
+      </div>
+      <div class="color-chip">
+        <div class="chip-swatch" style="background:#1C2028"></div>
+        <div class="chip-info"><div class="chip-name">Ink 800</div><div class="chip-hex">#1C2028</div><div class="chip-role">cards</div></div>
+      </div>
+      <div class="color-chip">
+        <div class="chip-swatch" style="background:#2DD4BF"></div>
+        <div class="chip-info"><div class="chip-name">Verdant</div><div class="chip-hex">#2DD4BF</div><div class="chip-role">acento primario</div></div>
+      </div>
+      <div class="color-chip">
+        <div class="chip-swatch" style="background:#FB923C"></div>
+        <div class="chip-info"><div class="chip-name">Ember</div><div class="chip-hex">#FB923C</div><div class="chip-role">Ruso</div></div>
+      </div>
+      <div class="color-chip">
+        <div class="chip-swatch" style="background:#FBBF24"></div>
+        <div class="chip-info"><div class="chip-name">Gold</div><div class="chip-hex">#FBBF24</div><div class="chip-role">Alemán</div></div>
+      </div>
+      <div class="color-chip">
+        <div class="chip-swatch" style="background:#818CF8"></div>
+        <div class="chip-info"><div class="chip-name">Lucid</div><div class="chip-hex">#818CF8</div><div class="chip-role">Inglés</div></div>
+      </div>
+      <div class="color-chip">
+        <div class="chip-swatch" style="background:#F87171"></div>
+        <div class="chip-info"><div class="chip-name">Crimson</div><div class="chip-hex">#F87171</div><div class="chip-role">error / difícil</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ds-section">
+    <p class="section-label">Tipografía</p>
+    <div class="type-specimen">
+      <div class="type-row">
+        <div class="type-meta">DM Serif Display<br>display / headings<br>serif con carácter</div>
+        <div class="type-preview"><div class="t-display">Учить языки</div></div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta">DM Serif Display<br>italic accent<br>marca + énfasis</div>
+        <div class="type-preview"><div class="t-display-i">Idiomatix</div></div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta">Outfit 600<br>h1 · 1.5rem</div>
+        <div class="type-preview"><div class="t-h1">Sesión de estudio</div></div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta">Outfit 500<br>h2 · 1.1rem</div>
+        <div class="type-preview"><div class="t-h2">Vocabulario A1 — Ruso</div></div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta">Outfit 400<br>body · 0.9rem</div>
+        <div class="type-preview"><div class="t-body">Las palabras marcadas como "difícil" aparecerán con mayor frecuencia en tus próximas sesiones.</div></div>
+      </div>
+      <div class="type-row">
+        <div class="type-meta">DM Mono 400<br>código · datos<br>0.82rem</div>
+        <div class="type-preview"><div class="t-mono">easiness: 2.6 · interval: 4d · reps: 3</div></div>
+      </div>
+    </div>
+    <div style="margin-top: 16px;">
+      <p class="section-label" style="margin-bottom: 8px;">Script coverage</p>
+      <div class="cyrillic-sample">
+        <span style="color: var(--ember-400);">RU</span> &nbsp;Привет, мир · Как дела? · Спасибо · До свидания<br>
+        <span style="color: var(--gold-400);">DE</span> &nbsp;Guten Morgen · Wie geht's? · Danke schön · Tschüss<br>
+        <span style="color: var(--lucid-400);">EN</span> &nbsp;Good morning · How are you? · Thank you · Goodbye
+      </div>
+    </div>
+  </div>
+
+  <div class="ds-section">
+    <p class="section-label">Componentes</p>
+    <div class="component-grid">
+
+      <div class="comp-card">
+        <div class="comp-title">Buttons</div>
+        <div class="btn-primary">Comenzar sesión</div>
+        <div class="btn-ghost">Ver vocabulario</div>
+        <div class="btn-danger">Eliminar mazo</div>
+      </div>
+
+      <div class="comp-card">
+        <div class="comp-title">Badges · Language + State</div>
+        <div class="badge-row">
+          <span class="badge badge-ru">RU</span>
+          <span class="badge badge-de">DE</span>
+          <span class="badge badge-en">EN</span>
+          <span class="badge badge-done">Aprendida</span>
+          <span class="badge badge-new">Nueva</span>
+          <span class="badge badge-level">A1</span>
+          <span class="badge badge-level">B2</span>
+          <span class="badge badge-level">C1</span>
+        </div>
+      </div>
+
+      <div class="comp-card" style="grid-column: 1 / -1;">
+        <div class="comp-title">Flashcard · Vista previa</div>
+        <div class="flashcard-preview">
+          <span class="fc-lang-tag">RU · A2</span>
+          <div class="fc-word">Спасибо</div>
+          <div class="fc-phonetic">/spa·sí·ba/</div>
+          <div class="fc-divider"></div>
+          <div class="fc-translation">Gracias · Thank you · Danke</div>
+          <div class="fc-rating-row">
+            <button class="rating-btn r-hard">Difícil</button>
+            <button class="rating-btn r-ok">Regular</button>
+            <button class="rating-btn r-easy">Fácil</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="comp-card" style="grid-column: 1 / -1;">
+        <div class="comp-title">Progress bars · Por idioma</div>
+        <div style="margin-bottom: 12px;">
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-secondary);margin-bottom:6px;font-family:var(--font-body);">
+            <span>Ruso · A1</span><span style="font-family:var(--font-mono);color:var(--ember-400);">73 / 120</span>
+          </div>
+          <div class="progress-bar-track"><div class="progress-bar-fill" style="width:61%;background:linear-gradient(90deg,#C2410C,#FB923C)"></div></div>
+        </div>
+        <div style="margin-bottom: 12px;">
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-secondary);margin-bottom:6px;font-family:var(--font-body);">
+            <span>Alemán · B1</span><span style="font-family:var(--font-mono);color:var(--gold-400);">210 / 350</span>
+          </div>
+          <div class="progress-bar-track"><div class="progress-bar-fill" style="width:60%;background:linear-gradient(90deg,#B45309,#FBBF24)"></div></div>
+        </div>
+        <div>
+          <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-secondary);margin-bottom:6px;font-family:var(--font-body);">
+            <span>Inglés · C1</span><span style="font-family:var(--font-mono);color:var(--lucid-400);">890 / 1000</span>
+          </div>
+          <div class="progress-bar-track"><div class="progress-bar-fill" style="width:89%;background:linear-gradient(90deg,#4338CA,#818CF8)"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ds-section">
+    <p class="section-label">Variante · Light mode</p>
+    <div class="light-variant">
+      <div class="lv-title">Light · surface #FFFFFF · bg #F8FAFC</div>
+      <div class="lv-card">
+        <div style="margin-bottom:6px"><span class="lv-badge-ru">RU · A1</span></div>
+        <div class="lv-word">Привет</div>
+        <div class="lv-phonetic">/pri·viét/</div>
+        <div class="lv-tr">Hola · Hello · Hallo</div>
+      </div>
+      <div style="margin-top:10px;display:flex;gap:6px;flex-wrap:wrap;">
+        <span style="background:#E0FBF7;color:#0F766E;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;font-family:'Outfit',sans-serif;">Aprendida</span>
+        <span style="background:#FFF3E8;color:#C2410C;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;font-family:'Outfit',sans-serif;">RU</span>
+        <span style="background:#EEF2FF;color:#4338CA;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;font-family:'Outfit',sans-serif;">EN</span>
+        <span style="background:#FEFCE8;color:#B45309;font-size:11px;padding:3px 10px;border-radius:20px;font-weight:500;font-family:'Outfit',sans-serif;">DE</span>
+      </div>
+    </div>
+  </div>
+
+</div>

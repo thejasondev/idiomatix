@@ -1,0 +1,148 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Inglés B1 — Intermedio",
+    "description": "Vocabulario intermedio del inglés. Phrasal verbs frecuentes, conectores discursivos, vocabulario de opinión y vocabulario temático del nivel B1.",
+    "lang": "en",
+    "level": "B1",
+    "source": "builtin",
+    "tags": ["builtin", "B1", "intermedio"]
+  },
+  "cards": [
+    {
+      "front": "although",
+      "back": "aunque / a pesar de que",
+      "phonetic": "/ɔːlˈðoʊ/",
+      "example": "Although it was raining, we went for a walk.",
+      "exampleTranslation": "Aunque llovía, salimos a caminar.",
+      "partOfSpeech": "conjunction",
+      "tags": ["conectores", "gramática"]
+    },
+    {
+      "front": "however",
+      "back": "sin embargo / no obstante",
+      "phonetic": "/haʊˈɛvər/",
+      "example": "It was difficult. However, we managed.",
+      "exampleTranslation": "Fue difícil. Sin embargo, lo logramos.",
+      "partOfSpeech": "adverb",
+      "tags": ["conectores"]
+    },
+    {
+      "front": "furthermore",
+      "back": "además / es más",
+      "phonetic": "/ˈfɜːrðərmɔːr/",
+      "example": "It's cheap. Furthermore, it's high quality.",
+      "exampleTranslation": "Es barato. Además, es de alta calidad.",
+      "partOfSpeech": "adverb",
+      "tags": ["conectores", "formal"]
+    },
+    {
+      "front": "therefore",
+      "back": "por lo tanto / por eso",
+      "phonetic": "/ˈðɛrfɔːr/",
+      "example": "He studied hard, therefore he passed.",
+      "exampleTranslation": "Estudió mucho, por lo tanto aprobó.",
+      "partOfSpeech": "adverb",
+      "tags": ["conectores"]
+    },
+    {
+      "front": "to look forward to",
+      "back": "tener ganas de / esperar con ilusión",
+      "phonetic": "/lʊk ˈfɔːrwərd tuː/",
+      "example": "I'm looking forward to seeing you.",
+      "exampleTranslation": "Tengo muchas ganas de verte.",
+      "partOfSpeech": "phrase",
+      "tags": ["phrasal verbs", "emociones"]
+    },
+    {
+      "front": "to give up",
+      "back": "rendirse / abandonar",
+      "phonetic": "/ɡɪv ʌp/",
+      "example": "Don't give up — keep trying!",
+      "exampleTranslation": "No te rindas, ¡sigue intentando!",
+      "partOfSpeech": "phrase",
+      "tags": ["phrasal verbs"]
+    },
+    {
+      "front": "to figure out",
+      "back": "entender / descifrar / resolver",
+      "phonetic": "/ˈfɪɡjər aʊt/",
+      "example": "I can't figure out how this works.",
+      "exampleTranslation": "No puedo entender cómo funciona esto.",
+      "partOfSpeech": "phrase",
+      "tags": ["phrasal verbs"]
+    },
+    {
+      "front": "opportunity",
+      "back": "oportunidad",
+      "phonetic": "/ˌɒpərˈtjuːnɪti/",
+      "example": "This is a great opportunity to learn.",
+      "exampleTranslation": "Esta es una gran oportunidad para aprender.",
+      "partOfSpeech": "noun",
+      "tags": ["abstracto"]
+    },
+    {
+      "front": "relationship",
+      "back": "relación",
+      "phonetic": "/rɪˈleɪʃənʃɪp/",
+      "example": "We have a good working relationship.",
+      "exampleTranslation": "Tenemos una buena relación de trabajo.",
+      "partOfSpeech": "noun",
+      "tags": ["social"]
+    },
+    {
+      "front": "experience",
+      "back": "experiencia",
+      "phonetic": "/ɪkˈspɪəriəns/",
+      "example": "You need more experience for this job.",
+      "exampleTranslation": "Necesitas más experiencia para este trabajo.",
+      "partOfSpeech": "noun",
+      "tags": ["trabajo", "abstracto"]
+    },
+    {
+      "front": "probably",
+      "back": "probablemente",
+      "phonetic": "/ˈprɒbəbli/",
+      "example": "He'll probably be late.",
+      "exampleTranslation": "Probablemente llegará tarde.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "probabilidad"]
+    },
+    {
+      "front": "actually",
+      "back": "en realidad / de hecho",
+      "phonetic": "/ˈæktʃuəli/",
+      "example": "Actually, I changed my mind.",
+      "exampleTranslation": "En realidad, cambié de opinión.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "matizadores"]
+    },
+    {
+      "front": "successful",
+      "back": "exitoso / con éxito",
+      "phonetic": "/səkˈsɛsfʊl/",
+      "example": "The project was very successful.",
+      "exampleTranslation": "El proyecto fue muy exitoso.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "to participate",
+      "back": "participar",
+      "phonetic": "/pɑːrˈtɪsɪpeɪt/",
+      "example": "Everyone should participate in class.",
+      "exampleTranslation": "Todos deben participar en clase.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "actividad"]
+    },
+    {
+      "front": "overall",
+      "back": "en general / en conjunto",
+      "phonetic": "/ˌoʊvərˈɔːl/",
+      "example": "Overall, it was a good experience.",
+      "exampleTranslation": "En general fue una buena experiencia.",
+      "partOfSpeech": "adverb",
+      "tags": ["conectores", "resumen"]
+    }
+  ]
+}
