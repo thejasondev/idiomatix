@@ -158,7 +158,7 @@ export default function VocabularioClient() {
       <SectionHeader
         title="Vocabulario"
         action={
-          <a href="/vocabulario/importar">
+          <a href="/importar">
             <Button size="sm" variant="ghost"><Plus size={13} /> Importar</Button>
           </a>
         }
