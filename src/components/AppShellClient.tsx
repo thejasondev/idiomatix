@@ -8,23 +8,33 @@
 
 import { useEffect } from 'react'
 import { useUIStore } from '@/stores'
-import { seedBuiltinDecks } from '@/db/seed'
 
 // Inline Toast to avoid circular dep with the full UI index
 import { Toast } from '@/components/ui'
 
+import OfflineBanner from '@/components/OfflineBanner'
+
 export default function AppShellClient() {
   const { toast, clearToast, theme, setTheme } = useUIStore()
 
-  // Sync theme on mount and when it changes
+  // Sync theme on mount and when it changes, AND on SPA navigation
   useEffect(() => {
-    const resolved =
-      theme === 'system'
-        ? window.matchMedia('(prefers-color-scheme: dark)').matches
-          ? 'dark'
-          : 'light'
-        : theme
-    document.documentElement.setAttribute('data-theme', resolved)
+    const applyTheme = () => {
+      const resolved =
+        theme === 'system'
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light'
+          : theme
+      document.documentElement.setAttribute('data-theme', resolved)
+    }
+
+    applyTheme() // Apply initially
+
+    // During view transitions, Astro replaces the HTML element, wiping out our attribute.
+    // We must re-apply it after every swap.
+    document.addEventListener('astro:after-swap', applyTheme)
+    return () => document.removeEventListener('astro:after-swap', applyTheme)
   }, [theme])
 
   // Listen for system theme changes when theme === 'system'
@@ -41,17 +51,10 @@ export default function AppShellClient() {
     return () => mq.removeEventListener('change', handler)
   }, [theme])
 
-  // Seed built-in decks on first load (idempotent)
-  useEffect(() => {
-    seedBuiltinDecks().catch(err =>
-      console.error('[AppShell] Seed failed:', err)
-    )
-  }, [])
-
-  if (!toast) return null
-
   return (
     <>
+      <OfflineBanner />
+      {toast && (
       <div className="toast-container" role="status" aria-live="polite">
         <Toast
           message={toast.message}
@@ -59,6 +62,7 @@ export default function AppShellClient() {
           onClose={clearToast}
         />
       </div>
+      )}
 
       <style>{`
         .toast-container {

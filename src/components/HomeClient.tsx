@@ -2,11 +2,13 @@
    HomeClient — Dashboard principal de la app
 ────────────────────────────────────────────────────────────── */
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, lazy, Suspense } from 'react'
 import { BookOpen, Flame, Target, Clock, ChevronRight, Plus } from 'lucide-react'
 import { LANGUAGES, type LanguageCode } from '@/types'
 import { db, getDeckStats, getActivityHistory } from '@/db'
 import type { DailyActivity, Deck } from '@/types'
+
+const OnboardingFlow = lazy(() => import('@/components/OnboardingFlow'))
 
 interface LangSummary {
   lang: LanguageCode
@@ -22,12 +24,18 @@ export default function HomeClient() {
   const [totalMinutes, setTotalMinutes] = useState(0)
   const [isLoading, setIsLoading] = useState(true)
   const [greeting, setGreeting] = useState('')
+  const [showOnboarding, setShowOnboarding] = useState(false)
 
   useEffect(() => {
     const hour = new Date().getHours()
     if (hour < 12) setGreeting('Buenos días')
     else if (hour < 19) setGreeting('Buenas tardes')
     else setGreeting('Buenas noches')
+
+    // Check if onboarding was completed
+    if (!localStorage.getItem('idiomatix-onboarded')) {
+      setShowOnboarding(true)
+    }
 
     loadData()
   }, [])
@@ -85,6 +93,13 @@ export default function HomeClient() {
 
   return (
     <div className="home">
+      {/* Onboarding — first-time experience */}
+      {showOnboarding && (
+        <Suspense fallback={null}>
+          <OnboardingFlow onComplete={() => setShowOnboarding(false)} />
+        </Suspense>
+      )}
+
       {/* Header */}
       <header className="home-header">
         <div>
@@ -191,17 +206,21 @@ export default function HomeClient() {
           <h2 className="section-title">Acciones rápidas</h2>
         </div>
         <div className="quick-grid">
+          <a href="/lectura" className="quick-btn">
+            <BookOpen size={18} strokeWidth={1.5} />
+            <span>Lectura</span>
+          </a>
+          <a href="/examen" className="quick-btn">
+            <Target size={18} strokeWidth={1.5} />
+            <span>Examen CEFR</span>
+          </a>
           <a href="/vocabulario/importar" className="quick-btn">
             <Plus size={18} strokeWidth={1.5} />
             <span>Importar mazo</span>
           </a>
-          <a href="/vocabulario/nuevo" className="quick-btn">
-            <BookOpen size={18} strokeWidth={1.5} />
-            <span>Nueva tarjeta</span>
-          </a>
-          <a href="/progreso" className="quick-btn">
-            <Target size={18} strokeWidth={1.5} />
-            <span>Ver progreso</span>
+          <a href="/gramatica" className="quick-btn">
+            <Clock size={18} strokeWidth={1.5} />
+            <span>Gramática</span>
           </a>
         </div>
       </section>
@@ -479,7 +498,7 @@ export default function HomeClient() {
         /* Quick actions */
         .quick-grid {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
           gap: 8px;
         }
 

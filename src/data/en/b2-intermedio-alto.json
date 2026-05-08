@@ -1,0 +1,193 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Inglés B2 — Intermedio Alto",
+    "description": "Vocabulario B2 del inglés. Conectores académicos, vocabulario de argumentación, matices semánticos y registro formal-académico para escritura y debate.",
+    "lang": "en",
+    "level": "B2",
+    "source": "builtin",
+    "tags": ["builtin", "B2", "intermedio-alto"]
+  },
+  "cards": [
+    {
+      "front": "consequently",
+      "back": "por consiguiente / como resultado",
+      "phonetic": "/ˈkɒnsɪkwəntli/",
+      "example": "He didn't study; consequently, he failed.",
+      "exampleTranslation": "No estudió; por consiguiente, suspendiò.",
+      "partOfSpeech": "adverb",
+      "tags": ["conectores", "formal"]
+    },
+    {
+      "front": "nevertheless",
+      "back": "sin embargo / no obstante",
+      "phonetic": "/ˌnevəðəˈles/",
+      "example": "It was difficult; nevertheless, we succeeded.",
+      "exampleTranslation": "Era difícil; sin embargo, lo logramos.",
+      "partOfSpeech": "adverb",
+      "tags": ["conectores", "formal"]
+    },
+    {
+      "front": "to be aware of",
+      "back": "ser consciente de / darse cuenta de",
+      "phonetic": "/bi əˈwɛr ɒv/",
+      "example": "He is fully aware of the consequences.",
+      "exampleTranslation": "Es plenamente consciente de las consecuencias.",
+      "partOfSpeech": "phrase",
+      "tags": ["frases", "mente"]
+    },
+    {
+      "front": "to strive for",
+      "back": "aspirar a / esforzarse por",
+      "phonetic": "/straɪv fɔːr/",
+      "example": "We should strive for excellence.",
+      "exampleTranslation": "Deberíamos aspirar a la excelencia.",
+      "partOfSpeech": "phrase",
+      "tags": ["frases", "motivación"]
+    },
+    {
+      "front": "to overcome",
+      "back": "superar / vencer",
+      "phonetic": "/ˌoʊvərˈkʌm/",
+      "example": "She overcame all the obstacles.",
+      "exampleTranslation": "Ella superó todos los obstáculos.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "logro"]
+    },
+    {
+      "front": "to influence",
+      "back": "influir / influenciar",
+      "phonetic": "/ˈɪnfluəns/",
+      "example": "Advertising greatly influences consumers.",
+      "exampleTranslation": "La publicidad influye considerablemente en los consumidores.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos"]
+    },
+    {
+      "front": "consequence",
+      "back": "consecuencia",
+      "phonetic": "/ˈkɒnsɪkwəns/",
+      "example": "What are the consequences of this decision?",
+      "exampleTranslation": "¿Cuáles son las consecuencias de esta decisión?",
+      "partOfSpeech": "noun",
+      "tags": ["abstracto"]
+    },
+    {
+      "front": "contradiction",
+      "back": "contradicción",
+      "phonetic": "/ˌkɒntrəˈdɪkʃən/",
+      "example": "There's a clear contradiction in his argument.",
+      "exampleTranslation": "Hay una clara contradicción en su argumento.",
+      "partOfSpeech": "noun",
+      "tags": ["abstracto", "lógica"]
+    },
+    {
+      "front": "prerequisite",
+      "back": "requisito previo / condición necesaria",
+      "phonetic": "/priːˈrɛkwɪzɪt/",
+      "example": "Trust is a prerequisite for cooperation.",
+      "exampleTranslation": "La confianza es un requisito previo para la cooperación.",
+      "partOfSpeech": "noun",
+      "tags": ["académico"]
+    },
+    {
+      "front": "ambiguous",
+      "back": "ambiguo",
+      "phonetic": "/æmˈbɪɡjuəs/",
+      "example": "His reply was rather ambiguous.",
+      "exampleTranslation": "Su respuesta fue bastante ambigua.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "comprehensive",
+      "back": "exhaustivo / completo / integral",
+      "phonetic": "/ˌkɒmprɪˈhɛnsɪv/",
+      "example": "We need a comprehensive analysis.",
+      "exampleTranslation": "Necesitamos un análisis exhaustivo.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "académico"]
+    },
+    {
+      "front": "compelling",
+      "back": "convincente / de peso / apremiante",
+      "phonetic": "/kəmˈpɛlɪŋ/",
+      "example": "She made a compelling argument.",
+      "exampleTranslation": "Presentó un argumento convincente.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "discurso"]
+    },
+    {
+      "front": "in particular",
+      "back": "en particular / concretamente",
+      "phonetic": "/ɪn pəˈtɪkjʊlər/",
+      "example": "I'm interested in this issue in particular.",
+      "exampleTranslation": "Me interesa esta cuestión en particular.",
+      "partOfSpeech": "phrase",
+      "tags": ["conectores", "discurso"]
+    },
+    {
+      "front": "at first glance",
+      "back": "a primera vista",
+      "phonetic": "/æt fɜːst ɡlɑːns/",
+      "example": "At first glance, it seems simple.",
+      "exampleTranslation": "A primera vista, parece simple.",
+      "partOfSpeech": "phrase",
+      "tags": ["frases", "discurso"]
+    },
+    {
+      "front": "with regard to",
+      "back": "en lo que se refiere a / con respecto a",
+      "phonetic": "/wɪð rɪˈɡɑːrd tuː/",
+      "example": "With regard to the budget, we must cut costs.",
+      "exampleTranslation": "En lo que se refiere al presupuesto, debemos recortar costes.",
+      "partOfSpeech": "phrase",
+      "tags": ["conectores", "formal"]
+    },
+    {
+      "front": "to the extent that",
+      "back": "hasta el punto de que / en la medida en que",
+      "phonetic": "/tuː ðə ɪkˈstɛnt ðæt/",
+      "example": "I agree, to the extent that it is feasible.",
+      "exampleTranslation": "Estoy de acuerdo, en la medida en que sea factible.",
+      "partOfSpeech": "phrase",
+      "tags": ["conectores", "B2"]
+    },
+    {
+      "front": "significant",
+      "back": "significativo / importante / sustancial",
+      "phonetic": "/sɪɡˈnɪfɪkənt/",
+      "example": "There is a significant difference.",
+      "exampleTranslation": "Hay una diferencia significativa.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "académico"]
+    },
+    {
+      "front": "as a result of",
+      "back": "como resultado de / a raíz de",
+      "phonetic": "/æz ə rɪˈzʌlt ɒv/",
+      "example": "As a result of the error, the project was delayed.",
+      "exampleTranslation": "Como resultado del error, el proyecto se retrasó.",
+      "partOfSpeech": "phrase",
+      "tags": ["conectores", "formal"]
+    },
+    {
+      "front": "crucial",
+      "back": "crucial / decisivo / fundamental",
+      "phonetic": "/ˈkruːʃəl/",
+      "example": "This is a crucial factor.",
+      "exampleTranslation": "Este es un factor crucial.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos"]
+    },
+    {
+      "front": "to highlight",
+      "back": "destacar / subrayar / poner de relieve",
+      "phonetic": "/ˈhaɪlaɪt/",
+      "example": "I would like to highlight this point.",
+      "exampleTranslation": "Me gustaría destacar este punto.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "discurso", "B2"]
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Inglés C2 — Maestría",
+    "description": "Vocabulario C2 del inglés. Proverbios anglosajones, expresiones literarias, vocabulario filosófico y el registro más elevado del inglés culto escrito y oral.",
+    "lang": "en",
+    "level": "C2",
+    "source": "builtin",
+    "tags": ["builtin", "C2", "maestria"]
+  },
+  "cards": [
+    {
+      "front": "every cloud has a silver lining",
+      "back": "no hay mal que por bien no venga",
+      "phonetic": "/ˈɛvri klaʊd hæz ə ˈsɪlvər ˈlaɪnɪŋ/",
+      "example": "We lost the contract, but every cloud has a silver lining — we found a better client.",
+      "exampleTranslation": "Perdimos el contrato, pero no hay mal que por bien no venga — encontramos un cliente mejor.",
+      "partOfSpeech": "phrase",
+      "tags": ["refranes", "C2"]
+    },
+    {
+      "front": "the cornerstone of",
+      "back": "la piedra angular de",
+      "phonetic": "/ðə ˈkɔːrnərstoʊn ɒv/",
+      "example": "Trust is the cornerstone of any relationship.",
+      "exampleTranslation": "La confianza es la piedra angular de cualquier relación.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "C2", "académico"]
+    },
+    {
+      "front": "through the lens of",
+      "back": "a través del prisma de / desde la óptica de",
+      "phonetic": "/θruː ðə lɛnz ɒv/",
+      "example": "Examine this issue through the lens of history.",
+      "exampleTranslation": "Examina esta cuestión a través del prisma de la historia.",
+      "partOfSpeech": "phrase",
+      "tags": ["académico", "C2"]
+    },
+    {
+      "front": "to atrophy",
+      "back": "atrofiarse / deteriorarse",
+      "phonetic": "/ˈætrəfi/",
+      "example": "Without practice, skills atrophy.",
+      "exampleTranslation": "Sin práctica, las habilidades se atrofian.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "C2"]
+    },
+    {
+      "front": "duplicitous",
+      "back": "hipócrita / doble / con doblez",
+      "phonetic": "/djuːˈplɪsɪtəs/",
+      "example": "His duplicitous nature was eventually revealed.",
+      "exampleTranslation": "Su naturaleza hipócrita fue finalmente revelada.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "carácter", "C2"]
+    },
+    {
+      "front": "immeasurable",
+      "back": "inconmensurable / inmenso",
+      "phonetic": "/ɪˈmɛʒərəbəl/",
+      "example": "The loss was of immeasurable proportions.",
+      "exampleTranslation": "La pérdida fue de proporciones inconmensurables.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "C2"]
+    },
+    {
+      "front": "ephemeral",
+      "back": "efímero / pasajero",
+      "phonetic": "/ɪˈfɛmərəl/",
+      "example": "Fame can be ephemeral.",
+      "exampleTranslation": "La fama puede ser efímera.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "tiempo", "C2"]
+    },
+    {
+      "front": "groundbreaking",
+      "back": "revolucionario / pionero / innovador",
+      "phonetic": "/ˈɡraʊndbreɪkɪŋ/",
+      "example": "A groundbreaking discovery changed medicine.",
+      "exampleTranslation": "Un descubrimiento revolucionario cambió la medicina.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "C2"]
+    },
+    {
+      "front": "to trample on",
+      "back": "pisotear / atropellar (derechos)",
+      "phonetic": "/ˈtræmpəl ɒn/",
+      "example": "We cannot allow anyone to trample on human rights.",
+      "exampleTranslation": "No podemos permitir que nadie pisotee los derechos humanos.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "derecho", "C2"]
+    },
+    {
+      "front": "entrenched",
+      "back": "arraigado / enquistado / consolidado",
+      "phonetic": "/ɪnˈtrɛntʃt/",
+      "example": "Entrenched attitudes are hard to change.",
+      "exampleTranslation": "Las actitudes arraigadas son difíciles de cambiar.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "C2"]
+    },
+    {
+      "front": "the crux of the matter",
+      "back": "el quid de la cuestión / el nudo del asunto",
+      "phonetic": "/ðə krʌks ɒv ðə ˈmætər/",
+      "example": "The crux of the matter is funding.",
+      "exampleTranslation": "El quid de la cuestión es la financiación.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "C2", "discurso"]
+    },
+    {
+      "front": "obfuscate",
+      "back": "ofuscar / oscurecer / enredar",
+      "phonetic": "/ˈɒbfʌskeɪt/",
+      "example": "He tried to obfuscate the facts.",
+      "exampleTranslation": "Intentó oscurecer los hechos.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "C2", "literario"]
+    },
+    {
+      "front": "inviolable",
+      "back": "inviolable / sacrosanto",
+      "phonetic": "/ɪnˈvaɪələbəl/",
+      "example": "Human dignity is inviolable.",
+      "exampleTranslation": "La dignidad humana es inviolable.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "derecho", "C2"]
+    },
+    {
+      "front": "in the course of",
+      "back": "en el transcurso de / a lo largo de",
+      "phonetic": "/ɪn ðə kɔːrs ɒv/",
+      "example": "In the course of the reforms, much changed.",
+      "exampleTranslation": "En el transcurso de las reformas, mucho cambió.",
+      "partOfSpeech": "phrase",
+      "tags": ["conectores", "formal", "C2"]
+    },
+    {
+      "front": "commensurate with",
+      "back": "proporcional a / acorde con",
+      "phonetic": "/kəˈmɛnʃərɪt wɪð/",
+      "example": "The risk is commensurate with the reward.",
+      "exampleTranslation": "El riesgo es proporcional a la recompensa.",
+      "partOfSpeech": "phrase",
+      "tags": ["adjetivos", "C2", "académico"]
+    },
+    {
+      "front": "inextricable",
+      "back": "inextricable / indisoluble",
+      "phonetic": "/ɪnˈɛkstrɪkəbəl/",
+      "example": "The two are inextricable.",
+      "exampleTranslation": "Los dos son indisolublemente ligados.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "C2"]
+    },
+    {
+      "front": "to engender",
+      "back": "engendrar / generar / suscitar",
+      "phonetic": "/ɪnˈdʒɛndər/",
+      "example": "Inequality engenders resentment.",
+      "exampleTranslation": "La desigualdad engendra resentimiento.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "formal", "C2"]
+    },
+    {
+      "front": "hubris",
+      "back": "soberbia desmedida / arrogancia",
+      "phonetic": "/ˈhjuːbrɪs/",
+      "example": "His hubris was ultimately his downfall.",
+      "exampleTranslation": "Su soberbia fue finalmente su caída.",
+      "partOfSpeech": "noun",
+      "tags": ["filosofía", "C2", "literario"]
+    },
+    {
+      "front": "predicated on",
+      "back": "basado en / que parte de la premisa de",
+      "phonetic": "/ˈprɛdɪkeɪtɪd ɒn/",
+      "example": "The plan is predicated on certain assumptions.",
+      "exampleTranslation": "El plan parte de ciertas premisas.",
+      "partOfSpeech": "phrase",
+      "tags": ["académico", "C2"]
+    },
+    {
+      "front": "to conflate",
+      "back": "confundir / mezclar indebidamente",
+      "phonetic": "/kənˈfleɪt/",
+      "example": "Don't conflate correlation with causation.",
+      "exampleTranslation": "No confundas correlación con causalidad.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "C2", "académico", "lógica"]
+    }
+  ]
+}

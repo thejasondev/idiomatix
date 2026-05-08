@@ -5,23 +5,23 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { db, getDueCards, getNewCards } from '@/db'
-import { seedBuiltinDecks } from '@/db/seed'
 import { calculateSM2, uiRatingToSM2 } from '@/lib/sm2'
 import { useUIStore, useSettingsStore } from '@/stores'
-import type { LanguageCode, VocabCard, Deck, CardReview, CEFRLevel } from '@/types'
+import type { LanguageCode, VocabCard, CardReview, CEFRLevel } from '@/types'
 
 // ─── useAppInit ───────────────────────────────────────────────
 /** Inicializa la app: seed, theme, etc. Llamar una vez en el root. */
 export function useAppInit() {
   const [ready, setReady] = useState(false)
-  const { setTheme, theme } = useUIStore()
 
   useEffect(() => {
-    // Apply persisted theme
-    setTheme(theme)
-
-    // Seed built-in decks
-    seedBuiltinDecks().finally(() => setReady(true))
+    // Only load the heavy seed module if DB is empty
+    db.decks.count().then(async (count) => {
+      if (count === 0) {
+        const { seedBuiltinDecks } = await import('@/db/seed')
+        await seedBuiltinDecks()
+      }
+    }).finally(() => setReady(true))
   }, []) // eslint-disable-line
 
   return { ready }

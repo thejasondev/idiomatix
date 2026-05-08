@@ -1,0 +1,195 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Alemán C2 — Maestría",
+    "description": "Vocabulario C2 del alemán. Vocabulario filosófico-literario, Fremdwörter de alta cultura, proverbios y expresiones del registro culto del alemán escrito.",
+    "lang": "de",
+    "level": "C2",
+    "source": "builtin",
+    "tags": ["builtin", "C2", "maestria"]
+  },
+  "cards": [
+    {
+      "front": "Wie man's treibt, so geht's",
+      "back": "como siembras, recoges / lo que haces eso obtienes",
+      "phonetic": "/vi man's traibt, zo geht's/",
+      "example": "Wie man's treibt, so geht's — also streng dich an.",
+      "exampleTranslation": "Como siembras, recoges — así que esfuérzate.",
+      "partOfSpeech": "phrase",
+      "tags": ["refranes", "C2"]
+    },
+    {
+      "front": "das A und O",
+      "back": "el alfa y el omega / lo fundamental",
+      "phonetic": "/das á: und o:/",
+      "example": "Ehrlichkeit ist das A und O jeder Beziehung.",
+      "exampleTranslation": "La honestidad es el alfa y el omega de toda relación.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "C2"]
+    },
+    {
+      "front": "etwas auf dem Kieker haben",
+      "back": "tenerla tomada con alguien / tener en el punto de mira",
+      "phonetic": "/ét·vas auf dem kí·ker há·ben/",
+      "example": "Der Chef hat ihn auf dem Kieker.",
+      "exampleTranslation": "El jefe la tiene tomada con él.",
+      "partOfSpeech": "phrase",
+      "tags": ["coloquial", "idiomático", "C2"]
+    },
+    {
+      "front": "richtungsweisend",
+      "back": "pionero / que marca el rumbo",
+      "phonetic": "/rích·tungs·vai·zend/",
+      "example": "Eine richtungsweisende Entscheidung.",
+      "exampleTranslation": "Una decisión que marca el rumbo.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "C2"]
+    },
+    {
+      "front": "durch die Brille sehen",
+      "back": "ver a través del prisma de",
+      "phonetic": "/durch di brí·le zé·en/",
+      "example": "Sieh es durch die Brille der Geschichte.",
+      "exampleTranslation": "Míralo a través del prisma de la historia.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "C2"]
+    },
+    {
+      "front": "verkümmern",
+      "back": "atrofiarse / marchitarse / deteriorarse",
+      "phonetic": "/fer·küm·mern/",
+      "example": "Ohne Übung verkümmern die Fähigkeiten.",
+      "exampleTranslation": "Sin práctica, las habilidades se atrofian.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "literario", "C2"]
+    },
+    {
+      "front": "arglistig",
+      "back": "artero / doloso / astuto con mala intención",
+      "phonetic": "/árg·lis·tich/",
+      "example": "Arglistige Täuschung ist strafbar.",
+      "exampleTranslation": "El engaño doloso es punible.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "derecho", "C2"]
+    },
+    {
+      "front": "unermesslich",
+      "back": "inconmensurable / inmenso",
+      "phonetic": "/un·er·més·lich/",
+      "example": "Unermessliche Reichtümer lagen verborgen.",
+      "exampleTranslation": "Riquezas inconmensurables yacían ocultas.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "literario", "C2"]
+    },
+    {
+      "front": "kurzlebig",
+      "back": "efímero / de corta vida",
+      "phonetic": "/kúrts·le·bich/",
+      "example": "Mode ist oft kurzlebig.",
+      "exampleTranslation": "La moda es a menudo efímera.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "tiempo", "C2"]
+    },
+    {
+      "front": "bahnbrechend",
+      "back": "innovador / revolucionario / pionero",
+      "phonetic": "/bán·brech·end/",
+      "example": "Eine bahnbrechende Entdeckung.",
+      "exampleTranslation": "Un descubrimiento revolucionario.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "C2"]
+    },
+    {
+      "front": "die Gebundenheit",
+      "back": "la dependencia / la sujeción",
+      "phonetic": "/di ge·bún·den·hait/",
+      "example": "Die Gebundenheit an Traditionen.",
+      "exampleTranslation": "La sujeción a las tradiciones.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["abstracto", "C2"]
+    },
+    {
+      "front": "das Labyrinth",
+      "back": "el laberinto / el entresijo",
+      "phonetic": "/das la·by·rínth/",
+      "example": "Das Labyrinth der Bürokratie.",
+      "exampleTranslation": "El laberinto de la burocracia.",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["abstracto", "C2"]
+    },
+    {
+      "front": "unantastbar",
+      "back": "intocable / sagrado / inviolable",
+      "phonetic": "/un·an·tásts·bar/",
+      "example": "Die Würde des Menschen ist unantastbar.",
+      "exampleTranslation": "La dignidad del ser humano es inviolable.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "derecho", "C2"]
+    },
+    {
+      "front": "zusammen mit",
+      "back": "aunado a / junto con",
+      "phonetic": "/zu·sá·men mit/",
+      "example": "Talent, zusammen mit Fleiß, ergibt Erfolg.",
+      "exampleTranslation": "El talento, aunado a la diligencia, produce éxito.",
+      "partOfSpeech": "phrase",
+      "tags": ["conectores", "C2"]
+    },
+    {
+      "front": "mit Füßen treten",
+      "back": "pisotear (derechos/valores)",
+      "phonetic": "/mit fü·ssen tré·ten/",
+      "example": "Man darf Menschenrechte nicht mit Füßen treten.",
+      "exampleTranslation": "No se pueden pisotear los derechos humanos.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "derecho", "C2"]
+    },
+    {
+      "front": "verknüpft mit Risiken",
+      "back": "conlleva riesgos / vinculado a riesgos",
+      "phonetic": "/fer·knüpft mit rí·zi·ken/",
+      "example": "Das Projekt ist mit erheblichen Risiken verknüpft.",
+      "exampleTranslation": "El proyecto conlleva riesgos considerables.",
+      "partOfSpeech": "phrase",
+      "tags": ["formal", "C2"]
+    },
+    {
+      "front": "tragend",
+      "back": "portante / fundamental / angular",
+      "phonetic": "/trá·gend/",
+      "example": "Das ist die tragende Säule unseres Plans.",
+      "exampleTranslation": "Esa es la columna angular de nuestro plan.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "C2"]
+    },
+    {
+      "front": "unumstößlich",
+      "back": "inamovible / irrefutable",
+      "phonetic": "/un·um·shtöss·lich/",
+      "example": "Das ist eine unumstößliche Tatsache.",
+      "exampleTranslation": "Ese es un hecho irrefutable.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "lógica", "C2"]
+    },
+    {
+      "front": "im Zuge",
+      "back": "en el transcurso de / en el marco de",
+      "phonetic": "/im tsú·ge/",
+      "example": "Im Zuge der Reformen wurde viel verändert.",
+      "exampleTranslation": "En el marco de las reformas se cambió mucho.",
+      "partOfSpeech": "phrase",
+      "tags": ["conectores", "formal", "C2"]
+    },
+    {
+      "front": "vergleichsweise",
+      "back": "comparativamente / relativamente",
+      "phonetic": "/fer·glíchs·vai·ze/",
+      "example": "Das ist vergleichsweise günstig.",
+      "exampleTranslation": "Eso es comparativamente barato.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "académico", "C2"]
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Ruso C2 — Maestría",
+    "description": "Vocabulario de nivel C2 del ruso. Proverbios, expresiones literarias, vocabulario de registro altísimo y matices propios del hablante nativo culto.",
+    "lang": "ru",
+    "level": "C2",
+    "source": "builtin",
+    "tags": ["builtin", "C2", "maestria"]
+  },
+  "cards": [
+    {
+      "front": "без обиняков",
+      "back": "sin rodeos / directamente",
+      "phonetic": "/bez a·bi·nyak·óf/",
+      "example": "Скажи прямо, без обиняков.",
+      "exampleTranslation": "Dilo directamente, sin rodeos.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "C2"]
+    },
+    {
+      "front": "держать в узде",
+      "back": "mantener bajo control / tener a raya",
+      "phonetic": "/dir·zhát' v uz·dé/",
+      "example": "Нужно держать ситуацию в узде.",
+      "exampleTranslation": "Hay que mantener la situación bajo control.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "C2"]
+    },
+    {
+      "front": "краеугольный камень",
+      "back": "piedra angular / fundamento",
+      "phonetic": "/kra·i·u·gól·nyj ká·min'/",
+      "example": "Это краеугольный камень нашей стратегии.",
+      "exampleTranslation": "Esta es la piedra angular de nuestra estrategia.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "C2", "académico"]
+    },
+    {
+      "front": "не за горами",
+      "back": "no está lejos / a la vuelta de la esquina",
+      "phonetic": "/ni za ga·rá·mi/",
+      "example": "Экзамены не за горами.",
+      "exampleTranslation": "Los exámenes están a la vuelta de la esquina.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "tiempo"]
+    },
+    {
+      "front": "сквозь призму",
+      "back": "a través del prisma de / desde la óptica de",
+      "phonetic": "/skvoz' prí·zmu/",
+      "example": "Посмотри на это сквозь призму истории.",
+      "exampleTranslation": "Mira esto a través del prisma de la historia.",
+      "partOfSpeech": "phrase",
+      "tags": ["académico", "discurso", "C2"]
+    },
+    {
+      "front": "изживать себя",
+      "back": "quedarse obsoleto / estar superado",
+      "phonetic": "/iz·zhi·vát' si·byá/",
+      "example": "Эта модель изживает себя.",
+      "exampleTranslation": "Este modelo está quedándose obsoleto.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "C2"]
+    },
+    {
+      "front": "превратности судьбы",
+      "back": "los avatares del destino / las vueltas de la vida",
+      "phonetic": "/priv·rát·nas·ti sud'·by/",
+      "example": "Превратности судьбы закалили его характер.",
+      "exampleTranslation": "Los avatares del destino forjaron su carácter.",
+      "partOfSpeech": "phrase",
+      "tags": ["literario", "C2"]
+    },
+    {
+      "front": "уповать",
+      "back": "confiar en / depositar esperanza en",
+      "phonetic": "/u·pa·vát'/",
+      "example": "Остаётся только уповать на удачу.",
+      "exampleTranslation": "Solo queda confiar en la suerte.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "literario", "C2"]
+    },
+    {
+      "front": "взыскательный",
+      "back": "exigente / riguroso",
+      "phonetic": "/vzys·ká·til·nyj/",
+      "example": "Взыскательный критик не даст пощады.",
+      "exampleTranslation": "Un crítico riguroso no dará cuartel.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "literario", "C2"]
+    },
+    {
+      "front": "несметный",
+      "back": "incalculable / innumerable",
+      "phonetic": "/nis·mét·nyj/",
+      "example": "Несметные богатства хранятся там.",
+      "exampleTranslation": "Allí se guardan riquezas incalculables.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "literario"]
+    },
+    {
+      "front": "сиюминутный",
+      "back": "del momento / pasajero / inmediato",
+      "phonetic": "/si·yu·mi·nút·nyj/",
+      "example": "Не поддавайся сиюминутным желаниям.",
+      "exampleTranslation": "No cedas a los deseos pasajeros del momento.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "tiempo", "C2"]
+    },
+    {
+      "front": "беспрецедентный",
+      "back": "sin precedentes",
+      "phonetic": "/bis·pri·tsi·dén·tnyj/",
+      "example": "Беспрецедентное решение суда.",
+      "exampleTranslation": "Una decisión judicial sin precedentes.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "formal", "C2"]
+    },
+    {
+      "front": "хитросплетение",
+      "back": "intríngulis / laberinto / enredo",
+      "phonetic": "/khit·ra·split·é·ni·ye/",
+      "example": "Хитросплетения политики сложны.",
+      "exampleTranslation": "Los entresijos de la política son complejos.",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["abstracto", "C2"]
+    },
+    {
+      "front": "лукавство",
+      "back": "astucia / doblez / disimulo",
+      "phonetic": "/lu·káf·stva/",
+      "example": "В его улыбке читалось лукавство.",
+      "exampleTranslation": "En su sonrisa se leía el disimulo.",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["carácter", "literario"]
+    },
+    {
+      "front": "незыблемый",
+      "back": "inquebrantable / inamovible",
+      "phonetic": "/ni·zy·bli·myj/",
+      "example": "Это незыблемый принцип нашей компании.",
+      "exampleTranslation": "Este es el principio inquebrantable de nuestra empresa.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "formal", "C2"]
+    },
+    {
+      "front": "вкупе с",
+      "back": "junto con / aunado a",
+      "phonetic": "/fkú·pe s/",
+      "example": "Талант вкупе с трудом даёт результат.",
+      "exampleTranslation": "El talento junto con el trabajo da resultados.",
+      "partOfSpeech": "preposition",
+      "tags": ["conectores", "formal", "C2"]
+    },
+    {
+      "front": "попрать",
+      "back": "pisotear (valores) / transgredir",
+      "phonetic": "/pap·rát'/",
+      "example": "Нельзя попирать права людей.",
+      "exampleTranslation": "No se pueden pisotear los derechos de las personas.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "derecho", "C2"]
+    },
+    {
+      "front": "сопряжённый с",
+      "back": "vinculado a / asociado con",
+      "phonetic": "/sap·ri·zhón·nyj s/",
+      "example": "Риски, сопряжённые с этим проектом.",
+      "exampleTranslation": "Los riesgos vinculados a este proyecto.",
+      "partOfSpeech": "phrase",
+      "tags": ["formal", "académico", "C2"]
+    },
+    {
+      "front": "соизмеримый",
+      "back": "comparable / proporcional / conmensurable",
+      "phonetic": "/sa·iz·mi·rí·myj/",
+      "example": "Риск соизмерим с потенциальной выгодой.",
+      "exampleTranslation": "El riesgo es proporcional al beneficio potencial.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "académico", "C2"]
+    },
+    {
+      "front": "прецедент",
+      "back": "precedente",
+      "phonetic": "/pri·tsi·dént/",
+      "example": "Это решение создаёт опасный прецедент.",
+      "exampleTranslation": "Esta decisión crea un precedente peligroso.",
+      "partOfSpeech": "noun",
+      "gender": "M",
+      "tags": ["derecho", "C2"]
+    }
+  ]
+}

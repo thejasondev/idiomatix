@@ -1,0 +1,196 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Alemán B2 — Intermedio Alto",
+    "description": "Vocabulario B2 del alemán. Partículas modales, sustantivos abstractos, construcciones académicas y vocabulario de argumentación y debate.",
+    "lang": "de",
+    "level": "B2",
+    "source": "builtin",
+    "tags": ["builtin", "B2", "intermedio-alto"]
+  },
+  "cards": [
+    {
+      "front": "infolgedessen",
+      "back": "por consiguiente / como resultado de ello",
+      "phonetic": "/in·fól·ge·des·sen/",
+      "example": "Er kam zu spät, infolgedessen verpasste er den Zug.",
+      "exampleTranslation": "Llegó tarde, por consiguiente perdió el tren.",
+      "partOfSpeech": "adverb",
+      "tags": ["conectores", "formal"]
+    },
+    {
+      "front": "nichtsdestotrotz",
+      "back": "sin embargo / no obstante / a pesar de todo",
+      "phonetic": "/nichts·des·to·trótz/",
+      "example": "Nichtsdestotrotz halte ich an meiner Meinung fest.",
+      "exampleTranslation": "Sin embargo, mantengo mi opinión.",
+      "partOfSpeech": "adverb",
+      "tags": ["conectores", "formal"]
+    },
+    {
+      "front": "sich bewusst sein",
+      "back": "ser consciente de",
+      "phonetic": "/sich be·vúst zayn/",
+      "example": "Er ist sich der Konsequenzen bewusst.",
+      "exampleTranslation": "Es consciente de las consecuencias.",
+      "partOfSpeech": "phrase",
+      "tags": ["frases", "mente"]
+    },
+    {
+      "front": "anstreben",
+      "back": "aspirar a / perseguir (un objetivo)",
+      "phonetic": "/án·shtre·ben/",
+      "example": "Wir streben eine nachhaltige Lösung an.",
+      "exampleTranslation": "Aspiramos a una solución sostenible.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "objetivos"]
+    },
+    {
+      "front": "überwinden",
+      "back": "superar / vencer",
+      "phonetic": "/ü·ber·vín·den/",
+      "example": "Sie hat ihre Angst überwunden.",
+      "exampleTranslation": "Ella superó su miedo.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "logro"]
+    },
+    {
+      "front": "beeinflussen",
+      "back": "influir / influenciar",
+      "phonetic": "/be·ayn·flú·ssen/",
+      "example": "Werbung beeinflusst unsere Entscheidungen.",
+      "exampleTranslation": "La publicidad influye en nuestras decisiones.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "influencia"]
+    },
+    {
+      "front": "die Folge",
+      "back": "la consecuencia / el resultado",
+      "phonetic": "/di fól·ge/",
+      "example": "Was sind die Folgen dieser Entscheidung?",
+      "exampleTranslation": "¿Cuáles son las consecuencias de esta decisión?",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["abstracto"]
+    },
+    {
+      "front": "der Widerspruch",
+      "back": "la contradicción / la objeción",
+      "phonetic": "/der ví·der·shpruch/",
+      "example": "Da liegt ein klarer Widerspruch vor.",
+      "exampleTranslation": "Aquí hay una clara contradicción.",
+      "partOfSpeech": "noun",
+      "gender": "M",
+      "tags": ["abstracto", "lógica"]
+    },
+    {
+      "front": "die Voraussetzung",
+      "back": "el requisito previo / la premisa",
+      "phonetic": "/di for·áus·ze·tzung/",
+      "example": "Das ist die Voraussetzung für den Erfolg.",
+      "exampleTranslation": "Ese es el requisito previo para el éxito.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["académico", "lógica"]
+    },
+    {
+      "front": "mehrdeutig",
+      "back": "ambiguo / de varios significados",
+      "phonetic": "/méhr·doy·tich/",
+      "example": "Seine Antwort war ziemlich mehrdeutig.",
+      "exampleTranslation": "Su respuesta fue bastante ambigua.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "discurso"]
+    },
+    {
+      "front": "erschöpfend",
+      "back": "exhaustivo / completo",
+      "phonetic": "/er·schöpf·end/",
+      "example": "Eine erschöpfende Analyse ist notwendig.",
+      "exampleTranslation": "Es necesario un análisis exhaustivo.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "académico"]
+    },
+    {
+      "front": "stichhaltig",
+      "back": "sólido / válido / convincente (argumento)",
+      "phonetic": "/shtích·hal·tich/",
+      "example": "Das ist ein stichhhaltiges Argument.",
+      "exampleTranslation": "Ese es un argumento convincente.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "discurso"]
+    },
+    {
+      "front": "im Wesentlichen",
+      "back": "esencialmente / en lo fundamental",
+      "phonetic": "/im vé·zent·li·chen/",
+      "example": "Im Wesentlichen stimme ich zu.",
+      "exampleTranslation": "Esencialmente estoy de acuerdo.",
+      "partOfSpeech": "phrase",
+      "tags": ["conectores", "discurso"]
+    },
+    {
+      "front": "auf den ersten Blick",
+      "back": "a primera vista",
+      "phonetic": "/auf den érs·ten blik/",
+      "example": "Auf den ersten Blick scheint es einfach.",
+      "exampleTranslation": "A primera vista parece simple.",
+      "partOfSpeech": "phrase",
+      "tags": ["frases", "discurso"]
+    },
+    {
+      "front": "was … betrifft",
+      "back": "en lo que respecta a / por lo que se refiere a",
+      "phonetic": "/vas … be·trífft/",
+      "example": "Was das Budget betrifft, müssen wir sparen.",
+      "exampleTranslation": "En lo que respecta al presupuesto, debemos ahorrar.",
+      "partOfSpeech": "phrase",
+      "tags": ["conectores", "discurso"]
+    },
+    {
+      "front": "inwiefern",
+      "back": "en qué medida / hasta qué punto",
+      "phonetic": "/in·vi·féhrn/",
+      "example": "Inwiefern ist das relevant?",
+      "exampleTranslation": "¿En qué medida es esto relevante?",
+      "partOfSpeech": "adverb",
+      "tags": ["discurso", "preguntas"]
+    },
+    {
+      "front": "maßgeblich",
+      "back": "determinante / decisivo / de referencia",
+      "phonetic": "/más·gep·lich/",
+      "example": "Das war die maßgebliche Entscheidung.",
+      "exampleTranslation": "Esa fue la decisión determinante.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "académico"]
+    },
+    {
+      "front": "infolge",
+      "back": "a raíz de / como consecuencia de",
+      "phonetic": "/in·fól·ge/",
+      "example": "Infolge des Fehlers wurde das Projekt verschoben.",
+      "exampleTranslation": "A raíz del error, el proyecto fue aplazado.",
+      "partOfSpeech": "preposition",
+      "tags": ["conectores", "formal"]
+    },
+    {
+      "front": "wesentlich",
+      "back": "sustancial / esencial / considerable",
+      "phonetic": "/vé·zent·lich/",
+      "example": "Das ist ein wesentlicher Unterschied.",
+      "exampleTranslation": "Esta es una diferencia esencial.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "académico"]
+    },
+    {
+      "front": "ausschlaggebend",
+      "back": "decisivo / determinante",
+      "phonetic": "/áus·shlag·ge·bend/",
+      "example": "Der ausschlaggebende Faktor war die Zeit.",
+      "exampleTranslation": "El factor determinante fue el tiempo.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "académico"]
+    }
+  ]
+}

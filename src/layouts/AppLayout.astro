@@ -16,20 +16,19 @@ const { title, description, activeNav = '/' } = Astro.props
 <BaseLayout title={title} description={description}>
   <div class="app-shell">
 
-    <!-- SideNav maneja tablet (tabbar top) + desktop (sidebar left) -->
-    <!-- client:load porque necesita window.innerWidth y Dexie live queries -->
-    <SideNav client:load activeNav={activeNav} />
+    <!-- SideNav — persists across navigations (no re-mount) -->
+    <SideNav client:load activeNav={activeNav} transition:persist="sidenav" />
 
-    <!-- Contenido principal -->
-    <main class="app-main" id="main-content" tabindex="-1">
+    <!-- Contenido principal — animated transition on page change -->
+    <main class="app-main" id="main-content" tabindex="-1" transition:animate="fade">
       <slot />
     </main>
 
-    <!-- BottomNav liquid glass — solo mobile, se oculta en ≥768px via CSS -->
-    <BottomNav client:load activeNav={activeNav} />
+    <!-- BottomNav — persists across navigations (no re-mount) -->
+    <BottomNav client:load activeNav={activeNav} transition:persist="bottomnav" />
 
-    <!-- Toast global + seed init -->
-    <AppShellClient client:load />
+    <!-- Toast global + seed init — persists -->
+    <AppShellClient client:load transition:persist="appshell" />
 
   </div>
 </BaseLayout>

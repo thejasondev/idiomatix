@@ -1,8 +1,15 @@
 ---
 import AppLayout from '@/layouts/AppLayout.astro'
 import GramaticaClient from '@/components/GramaticaClient'
+import { ErrorBoundary } from '@/components/ui'
 ---
 
-<AppLayout title="Gramática" activeNav="/gramatica">
-  <GramaticaClient client:load />
+<AppLayout
+  title="Gramática"
+  description="Ejercicios de gramática interactivos: selección múltiple, completar espacios y ordenar palabras en 3 idiomas."
+  activeNav="/gramatica"
+>
+  <ErrorBoundary client:load moduleName="Gramática">
+    <GramaticaClient client:load />
+  </ErrorBoundary>
 </AppLayout>

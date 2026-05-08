@@ -6,11 +6,11 @@
 import { useState, useCallback } from 'react'
 import { useLiveQuery } from 'dexie-react-hooks'
 import { Plus, Trash2, Download, BookOpen, ChevronRight, Search, X } from 'lucide-react'
-import { SectionHeader, Badge, Button, Card, Modal, EmptyState } from '@/components/ui'
+import { SectionHeader, Badge, Button, Modal, EmptyState } from '@/components/ui'
 import { useAppInit, useDeckStats } from '@/hooks'
 import { db } from '@/db'
 import { exportDeckAsJSON } from '@/lib/importer'
-import { LANGUAGES, CEFR_LEVELS, type LanguageCode, type CEFRLevel, type VocabCard, type Deck } from '@/types'
+import { LANGUAGES, type VocabCard, type Deck } from '@/types'
 
 
 type View = 'decks' | 'cards'

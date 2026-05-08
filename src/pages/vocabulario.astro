@@ -1,8 +1,15 @@
 ---
 import AppLayout from '@/layouts/AppLayout.astro'
 import VocabularioClient from '@/components/VocabularioClient'
+import { ErrorBoundary } from '@/components/ui'
 ---
 
-<AppLayout title="Vocabulario" activeNav="/vocabulario">
-  <VocabularioClient client:load />
+<AppLayout
+  title="Vocabulario"
+  description="Explora y gestiona tus mazos de vocabulario en Ruso, Alemán e Inglés. Crea, importa y exporta tarjetas."
+  activeNav="/vocabulario"
+>
+  <ErrorBoundary client:load moduleName="Vocabulario">
+    <VocabularioClient client:load />
+  </ErrorBoundary>
 </AppLayout>

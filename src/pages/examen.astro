@@ -1,0 +1,15 @@
+---
+import AppLayout from '@/layouts/AppLayout.astro'
+import ExamenClient from '@/components/ExamenClient'
+import { ErrorBoundary } from '@/components/ui'
+---
+
+<AppLayout
+  title="Examen CEFR"
+  description="Evalúa tu nivel de idioma con exámenes adaptativos alineados al Marco Común Europeo (A1–C2)."
+  activeNav="/examen"
+>
+  <ErrorBoundary client:load moduleName="Examen">
+    <ExamenClient client:load />
+  </ErrorBoundary>
+</AppLayout>

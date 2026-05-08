@@ -4,6 +4,7 @@
 
 import { useState, useCallback, useEffect } from 'react'
 import { Volume2, Eye } from 'lucide-react'
+import PronunciationPractice from '@/components/PronunciationPractice'
 import type { VocabCard } from '@/types'
 import { LANGUAGES } from '@/types'
 import { speak, isTTSSupported } from '@/lib/tts'
@@ -122,6 +123,8 @@ export default function FlashCard({
           <div className="fc-back animate-fade-in">
             <div className="fc-divider" />
             <p className="fc-translation">{card.back}</p>
+            {/* STT pronunciation practice */}
+            <PronunciationPractice word={card.front} lang={card.lang} />
             {card.example && (
               <div className="fc-example">
                 <p className="fc-example__sentence">{card.example}</p>

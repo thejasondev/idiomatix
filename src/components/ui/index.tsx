@@ -1,11 +1,12 @@
 /* ──────────────────────────────────────────────────────────────
    Idiomatix — UI Primitives
    Button · Badge · Card · Modal · Toast · ProgressBar · Spinner
+   Skeleton · ErrorBoundary
    Todos accesibles, theme-aware, sin dependencias externas.
 ────────────────────────────────────────────────────────────── */
 
-import { useEffect, useRef, type ReactNode, type ButtonHTMLAttributes } from 'react'
-import { X } from 'lucide-react'
+import { Component, useEffect, useRef, type ReactNode, type ButtonHTMLAttributes } from 'react'
+import { X, AlertTriangle } from 'lucide-react'
 
 // ─── Button ───────────────────────────────────────────────────
 
@@ -555,4 +556,147 @@ export function SectionHeader({ title, action, description }: SectionHeaderProps
       `}</style>
     </>
   )
+}
+
+// ─── Skeleton ─────────────────────────────────────────────────
+
+interface SkeletonProps {
+  width?: string | number
+  height?: string | number
+  radius?: string
+  lines?: number
+  gap?: string
+  className?: string
+}
+
+export function Skeleton({
+  width = '100%',
+  height = '1rem',
+  radius = 'var(--radius-md)',
+  lines,
+  gap = '8px',
+  className = '',
+}: SkeletonProps) {
+  if (lines && lines > 1) {
+    return (
+      <>
+        <div className={`skel-group ${className}`} style={{ gap }}>
+          {Array.from({ length: lines }).map((_, i) => (
+            <div
+              key={i}
+              className="skel-line"
+              style={{
+                width: i === lines - 1 ? '60%' : '100%',
+                height: typeof height === 'number' ? `${height}px` : height,
+                borderRadius: radius,
+              }}
+            />
+          ))}
+        </div>
+        <style>{SKEL_STYLES}</style>
+      </>
+    )
+  }
+
+  return (
+    <>
+      <div
+        className={`skel-line ${className}`}
+        style={{
+          width: typeof width === 'number' ? `${width}px` : width,
+          height: typeof height === 'number' ? `${height}px` : height,
+          borderRadius: radius,
+        }}
+      />
+      <style>{SKEL_STYLES}</style>
+    </>
+  )
+}
+
+export function PageSkeleton() {
+  return (
+    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', paddingTop: '0.5rem' }}>
+      <Skeleton width="45%" height="24px" />
+      <Skeleton width="70%" height="14px" />
+      <div style={{ marginTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+        <Skeleton height="80px" radius="var(--radius-lg)" />
+        <Skeleton height="80px" radius="var(--radius-lg)" />
+        <Skeleton height="80px" radius="var(--radius-lg)" />
+      </div>
+    </div>
+  )
+}
+
+const SKEL_STYLES = `
+  .skel-group { display: flex; flex-direction: column; }
+  .skel-line {
+    background: linear-gradient(90deg, var(--bg-elevated) 25%, var(--bg-card) 50%, var(--bg-elevated) 75%);
+    background-size: 200% 100%;
+    animation: skelShimmer 1.5s ease-in-out infinite;
+  }
+  @keyframes skelShimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+`
+
+// ─── ErrorBoundary ────────────────────────────────────────────
+
+interface EBProps { children: ReactNode; moduleName?: string }
+interface EBState { hasError: boolean; error: Error | null }
+
+export class ErrorBoundary extends Component<EBProps, EBState> {
+  constructor(props: EBProps) {
+    super(props)
+    this.state = { hasError: false, error: null }
+  }
+
+  static getDerivedStateFromError(error: Error) {
+    return { hasError: true, error }
+  }
+
+  componentDidCatch(error: Error, info: React.ErrorInfo) {
+    console.error(`[Idiomatix] Error in ${this.props.moduleName ?? 'component'}:`, error, info)
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return (
+        <>
+          <div className="eb-container">
+            <div className="eb-card">
+              <AlertTriangle size={28} strokeWidth={1.5} />
+              <h3 className="eb-title">Algo salió mal</h3>
+              <p className="eb-msg">
+                {this.props.moduleName
+                  ? `El módulo "${this.props.moduleName}" encontró un error.`
+                  : 'Se produjo un error inesperado.'}
+              </p>
+              {this.state.error && (
+                <code className="eb-detail">{this.state.error.message}</code>
+              )}
+              <button
+                className="eb-retry"
+                onClick={() => this.setState({ hasError: false, error: null })}
+                type="button"
+              >
+                Reintentar
+              </button>
+            </div>
+          </div>
+          <style>{`
+            .eb-container { display:flex; align-items:center; justify-content:center; min-height:200px; padding:2rem; }
+            .eb-card { display:flex; flex-direction:column; align-items:center; text-align:center; gap:10px; padding:2rem; background:var(--bg-card); border:0.5px solid var(--border-default); border-radius:var(--radius-lg); max-width:360px; }
+            .eb-icon { color:var(--ember-400); }
+            .eb-title { font-size:1.1rem; font-weight:600; color:var(--text-primary); }
+            .eb-msg { font-size:13px; color:var(--text-secondary); line-height:1.5; }
+            .eb-detail { font-family:var(--font-mono); font-size:11px; color:var(--text-muted); background:var(--bg-elevated); padding:6px 12px; border-radius:var(--radius-sm); max-width:100%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+            .eb-retry { margin-top:6px; padding:8px 20px; background:var(--verdant-600); color:white; border:none; border-radius:var(--radius-md); font-family:var(--font-body); font-size:13px; font-weight:500; cursor:pointer; transition:background 150ms; }
+            .eb-retry:hover { background:var(--verdant-500); }
+          `}</style>
+        </>
+      )
+    }
+    return this.props.children
+  }
 }

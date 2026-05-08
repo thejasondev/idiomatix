@@ -1,8 +1,15 @@
 ---
 import AppLayout from '@/layouts/AppLayout.astro'
 import PracticarClient from '@/components/PracticarClient'
+import { ErrorBoundary } from '@/components/ui'
 ---
 
-<AppLayout title="Practicar" activeNav="/practicar">
-  <PracticarClient client:load />
+<AppLayout
+  title="Practicar"
+  description="Sesiones de repaso con tarjetas SRS y ejercicios activos. El algoritmo SM-2 optimiza tu retención."
+  activeNav="/practicar"
+>
+  <ErrorBoundary client:load moduleName="Practicar">
+    <PracticarClient client:load />
+  </ErrorBoundary>
 </AppLayout>

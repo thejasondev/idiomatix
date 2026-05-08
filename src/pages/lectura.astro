@@ -1,0 +1,15 @@
+---
+import AppLayout from '@/layouts/AppLayout.astro'
+import LecturaClient from '@/components/LecturaClient'
+import { ErrorBoundary } from '@/components/ui'
+---
+
+<AppLayout
+  title="Lectura"
+  description="Lee textos graduados por nivel CEFR. Toca cualquier palabra para guardarla y practica comprensión lectora."
+  activeNav="/lectura"
+>
+  <ErrorBoundary client:load moduleName="Lectura">
+    <LecturaClient client:load />
+  </ErrorBoundary>
+</AppLayout>

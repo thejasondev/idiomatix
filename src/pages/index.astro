@@ -1,9 +1,15 @@
 ---
-// pages/index.astro — Dashboard principal
 import AppLayout from '@/layouts/AppLayout.astro'
 import HomeClient from '@/components/HomeClient'
+import { ErrorBoundary, PageSkeleton } from '@/components/ui'
 ---
 
-<AppLayout title="Inicio" activeNav="/">
-  <HomeClient client:load />
+<AppLayout
+  title="Inicio"
+  description="Dashboard de Idiomatix: tu racha, tarjetas pendientes y progreso diario en Ruso, Alemán e Inglés."
+  activeNav="/"
+>
+  <ErrorBoundary client:load moduleName="Inicio">
+    <HomeClient client:load />
+  </ErrorBoundary>
 </AppLayout>

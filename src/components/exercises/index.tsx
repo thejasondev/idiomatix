@@ -15,7 +15,6 @@ import type {
   FillBlankExercise,
   WordOrderExercise,
 } from '@/utils'
-import type { LanguageCode } from '@/types'
 import { LANGUAGES } from '@/types'
 
 // ─── Shared types ──────────────────────────────────────────────
@@ -161,7 +160,7 @@ export function FillBlank({ exercise, onResult }: FBProps) {
     inputRef.current?.focus()
   }, [])
 
-  const tts = isTTSSupported()
+
 
   // Highlight the blank in the prompt
   const parts = exercise.prompt.split('___')

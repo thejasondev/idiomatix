@@ -1,0 +1,193 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Inglés C1 — Avanzado",
+    "description": "Vocabulario C1 del inglés. Idioms académicos, colocaciones avanzadas, registro formal-literario y vocabulario para argumentación de alto nivel.",
+    "lang": "en",
+    "level": "C1",
+    "source": "builtin",
+    "tags": ["builtin", "C1", "avanzado"]
+  },
+  "cards": [
+    {
+      "front": "to beat around the bush",
+      "back": "andarse con rodeos / no ir al grano",
+      "phonetic": "/biːt əˈraʊnd ðə bʊʃ/",
+      "example": "Stop beating around the bush — tell me directly.",
+      "exampleTranslation": "Deja de andarte con rodeos, dímelo directamente.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "C1"]
+    },
+    {
+      "front": "to hit the nail on the head",
+      "back": "dar en el clavo",
+      "phonetic": "/hɪt ðə neɪl ɒn ðə hɛd/",
+      "example": "You hit the nail on the head with that analysis.",
+      "exampleTranslation": "Diste en el clavo con ese análisis.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "C1"]
+    },
+    {
+      "front": "notwithstanding",
+      "back": "a pesar de / no obstante",
+      "phonetic": "/ˌnɒtwɪθˈstændɪŋ/",
+      "example": "Notwithstanding the difficulties, he succeeded.",
+      "exampleTranslation": "A pesar de las dificultades, lo logró.",
+      "partOfSpeech": "preposition",
+      "tags": ["conectores", "formal", "C1"]
+    },
+    {
+      "front": "proportionate",
+      "back": "proporcionado / adecuado",
+      "phonetic": "/prəˈpɔːʃənɪt/",
+      "example": "The punishment should be proportionate to the crime.",
+      "exampleTranslation": "El castigo debe ser proporcionado al delito.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "derecho", "C1"]
+    },
+    {
+      "front": "sophisticated",
+      "back": "sofisticado / refinado",
+      "phonetic": "/səˈfɪstɪkeɪtɪd/",
+      "example": "This is a sophisticated approach.",
+      "exampleTranslation": "Este es un enfoque sofisticado.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "C1"]
+    },
+    {
+      "front": "unprecedented",
+      "back": "sin precedentes",
+      "phonetic": "/ʌnˈprɛsɪdɛntɪd/",
+      "example": "An unprecedented decision was made.",
+      "exampleTranslation": "Se tomó una decisión sin precedentes.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "C1", "formal"]
+    },
+    {
+      "front": "to alleviate",
+      "back": "aliviar / mitigar / paliar",
+      "phonetic": "/əˈliːvieɪt/",
+      "example": "Measures were taken to alleviate poverty.",
+      "exampleTranslation": "Se tomaron medidas para aliviar la pobreza.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "C1"]
+    },
+    {
+      "front": "to appeal to",
+      "back": "apelar a / hacer referencia a",
+      "phonetic": "/əˈpiːl tuː/",
+      "example": "He appealed to common sense.",
+      "exampleTranslation": "Apeló al sentido común.",
+      "partOfSpeech": "phrase",
+      "tags": ["verbos", "discurso", "C1"]
+    },
+    {
+      "front": "worldview",
+      "back": "cosmovisión / visión del mundo",
+      "phonetic": "/ˈwɜːldvjuː/",
+      "example": "Travel broadens one's worldview.",
+      "exampleTranslation": "Los viajes amplían la cosmovisión de uno.",
+      "partOfSpeech": "noun",
+      "tags": ["filosofía", "C1"]
+    },
+    {
+      "front": "inference",
+      "back": "inferencia / conclusión lógica",
+      "phonetic": "/ˈɪnfərəns/",
+      "example": "What inference can we draw from this data?",
+      "exampleTranslation": "¿Qué inferencia podemos sacar de estos datos?",
+      "partOfSpeech": "noun",
+      "tags": ["lógica", "académico"]
+    },
+    {
+      "front": "abuse of power",
+      "back": "abuso de poder",
+      "phonetic": "/əˈbjuːs ɒv ˈpaʊər/",
+      "example": "The abuse of power is unacceptable.",
+      "exampleTranslation": "El abuso de poder es inaceptable.",
+      "partOfSpeech": "phrase",
+      "tags": ["derecho", "C1"]
+    },
+    {
+      "front": "in hindsight",
+      "back": "en retrospectiva / mirando atrás",
+      "phonetic": "/ɪn ˈhaɪndsaɪt/",
+      "example": "In hindsight, the decision was wrong.",
+      "exampleTranslation": "En retrospectiva, la decisión fue errónea.",
+      "partOfSpeech": "phrase",
+      "tags": ["tiempo", "discurso", "C1"]
+    },
+    {
+      "front": "with the caveat that",
+      "back": "con la salvedad de que",
+      "phonetic": "/wɪð ðə ˈkæviæt ðæt/",
+      "example": "I agree, with the caveat that resources are limited.",
+      "exampleTranslation": "Estoy de acuerdo, con la salvedad de que los recursos son limitados.",
+      "partOfSpeech": "phrase",
+      "tags": ["discurso", "C1"]
+    },
+    {
+      "front": "self-sufficient",
+      "back": "autosuficiente",
+      "phonetic": "/ˌsɛlfsəˈfɪʃənt/",
+      "example": "She is a self-sufficient individual.",
+      "exampleTranslation": "Ella es una persona autosuficiente.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "carácter", "C1"]
+    },
+    {
+      "front": "to foster",
+      "back": "fomentar / promover / cultivar",
+      "phonetic": "/ˈfɒstər/",
+      "example": "The program fosters creativity in children.",
+      "exampleTranslation": "El programa fomenta la creatividad en los niños.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "formal", "C1"]
+    },
+    {
+      "front": "inevitable",
+      "back": "inevitable / ineludible",
+      "phonetic": "/ɪnˈɛvɪtəbəl/",
+      "example": "Change is inevitable.",
+      "exampleTranslation": "El cambio es inevitable.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "C1"]
+    },
+    {
+      "front": "sustainable",
+      "back": "sostenible / sustentable",
+      "phonetic": "/səˈsteɪnəbəl/",
+      "example": "We need a sustainable solution.",
+      "exampleTranslation": "Necesitamos una solución sostenible.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "ecología", "C1"]
+    },
+    {
+      "front": "inextricably linked",
+      "back": "inextricablemente ligado / estrechamente vinculado",
+      "phonetic": "/ɪnˈɛkstrɪkəbli lɪŋkt/",
+      "example": "The two issues are inextricably linked.",
+      "exampleTranslation": "Las dos cuestiones están estrechamente vinculadas.",
+      "partOfSpeech": "phrase",
+      "tags": ["frases", "académico", "C1"]
+    },
+    {
+      "front": "to mitigate",
+      "back": "mitigar / reducir / atenuar",
+      "phonetic": "/ˈmɪtɪɡeɪt/",
+      "example": "Steps were taken to mitigate the risks.",
+      "exampleTranslation": "Se tomaron medidas para mitigar los riesgos.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "formal", "C1"]
+    },
+    {
+      "front": "to shed light on",
+      "back": "arrojar luz sobre / aclarar",
+      "phonetic": "/ʃɛd laɪt ɒn/",
+      "example": "This study sheds light on the problem.",
+      "exampleTranslation": "Este estudio arroja luz sobre el problema.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "académico", "C1"]
+    }
+  ]
+}

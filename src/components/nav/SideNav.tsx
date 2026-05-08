@@ -29,6 +29,8 @@ import {
   ChevronLeft,
   ChevronRight,
   Flame,
+  Library,
+  ClipboardCheck,
 } from 'lucide-react'
 import { db } from '@/db'
 import { useUIStore } from '@/stores'
@@ -46,8 +48,10 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { href: '/',            label: 'Inicio',      icon: Home,          badge: false },
   { href: '/vocabulario', label: 'Vocabulario', icon: BookOpen,      badge: false },
-  { href: '/practicar',   label: 'Practicar',   icon: Dumbbell,      badge: true  },
+  { href: '/lectura',     label: 'Lectura',     icon: Library,       badge: false },
   { href: '/gramatica',   label: 'Gramática',   icon: GraduationCap, badge: false },
+  { href: '/practicar',   label: 'Practicar',   icon: Dumbbell,      badge: true  },
+  { href: '/examen',      label: 'Examen',      icon: ClipboardCheck, badge: false },
   { href: '/progreso',    label: 'Progreso',    icon: BarChart2,     badge: false },
 ]
 
@@ -66,7 +70,6 @@ function useBreakpoint() {
       else setBP('mobile')
     }
     update()
-    const mq = window.matchMedia('(min-width: 768px)')
     window.addEventListener('resize', update, { passive: true })
     return () => window.removeEventListener('resize', update)
   }, [])
@@ -76,7 +79,13 @@ function useBreakpoint() {
 
 function useCurrentPath() {
   const [path, setPath] = useState('/')
-  useEffect(() => { setPath(window.location.pathname) }, [])
+  useEffect(() => {
+    setPath(window.location.pathname)
+
+    const onSwap = () => setPath(window.location.pathname)
+    document.addEventListener('astro:after-swap', onSwap)
+    return () => document.removeEventListener('astro:after-swap', onSwap)
+  }, [])
   return path
 }
 
@@ -401,15 +410,12 @@ function Sidebar({
         <div className="sidebar__inner">
 
           {/* ── Logo ──────────────────────────────── */}
-          <div className="sidebar__header">
-            <a href="/" className="sidebar__logo" aria-label="Idiomatix — inicio">
-              {!collapsed && (
-                <>Idiom<em>atix</em></>
-              )}
-              {collapsed && (
-                <span className="sidebar__logo-icon">I<em>x</em></span>
-              )}
-            </a>
+          <div className={`sidebar__header ${collapsed ? 'sidebar__header--collapsed' : ''}`}>
+            {!collapsed && (
+              <a href="/" className="sidebar__logo" aria-label="Idiomatix — inicio">
+                Idiom<em>atix</em>
+              </a>
+            )}
             <button
               className="sidebar__collapse-btn"
               onClick={onToggleCollapse}
@@ -566,6 +572,9 @@ function Sidebar({
           gap: 8px;
           min-height: 48px;
         }
+        .sidebar__header--collapsed {
+          justify-content: center;
+        }
 
         .sidebar__logo {
           font-family: var(--font-display);
@@ -580,12 +589,6 @@ function Sidebar({
           transition: opacity 200ms;
         }
         .sidebar__logo em { font-style: italic; color: var(--verdant-500); }
-
-        .sidebar__logo-icon {
-          font-family: var(--font-display);
-          font-size: 1.2rem;
-        }
-        .sidebar__logo-icon em { font-style: italic; color: var(--verdant-500); }
 
         .sidebar__collapse-btn {
           width: 24px; height: 24px;

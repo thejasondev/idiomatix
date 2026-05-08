@@ -4,11 +4,11 @@
 ────────────────────────────────────────────────────────────── */
 
 import { useState, useEffect, useCallback } from 'react'
-import { CheckCircle, XCircle, BarChart2, RotateCcw, Home } from 'lucide-react'
+import { CheckCircle, RotateCcw, Home } from 'lucide-react'
 import FlashCard, { type UIRating } from '@/components/flashcards/FlashCard'
 import { Spinner, Button, ProgressBar } from '@/components/ui'
 import { useStudyQueue, useTimer } from '@/hooks'
-import { calculateSM2, uiRatingToSM2, formatInterval } from '@/lib/sm2'
+import { calculateSM2, uiRatingToSM2 } from '@/lib/sm2'
 import { db, recordDailyActivity } from '@/db'
 import type { LanguageCode, VocabCard } from '@/types'
 import { LANGUAGES } from '@/types'

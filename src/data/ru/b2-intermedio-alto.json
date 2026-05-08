@@ -1,0 +1,197 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Ruso B2 — Intermedio Alto",
+    "description": "Vocabulario de nivel B2 del ruso. Conceptos abstractos, marcadores del discurso, verbos compuestos y vocabulario académico para expresarse con fluidez y precisión.",
+    "lang": "ru",
+    "level": "B2",
+    "source": "builtin",
+    "tags": ["builtin", "B2", "intermedio-alto"]
+  },
+  "cards": [
+    {
+      "front": "следовательно",
+      "back": "por consiguiente / por lo tanto",
+      "phonetic": "/slé·da·va·tel·na/",
+      "example": "Он не пришёл, следовательно, встреча отменяется.",
+      "exampleTranslation": "Él no vino, por consiguiente, la reunión se cancela.",
+      "partOfSpeech": "adverb",
+      "tags": ["discurso", "formal", "conectores"]
+    },
+    {
+      "front": "тем не менее",
+      "back": "sin embargo / no obstante",
+      "phonetic": "/tyem ni mé·ni·ye/",
+      "example": "Задача трудная, тем не менее решаемая.",
+      "exampleTranslation": "La tarea es difícil, sin embargo, es resoluble.",
+      "partOfSpeech": "adverb",
+      "tags": ["discurso", "conectores"]
+    },
+    {
+      "front": "осознавать",
+      "back": "ser consciente de / darse cuenta",
+      "phonetic": "/a·saz·na·vát'/",
+      "example": "Он осознаёт всю серьёзность ситуации.",
+      "exampleTranslation": "Él es consciente de toda la gravedad de la situación.",
+      "partOfSpeech": "verb",
+      "tags": ["mente", "verbos"]
+    },
+    {
+      "front": "стремиться",
+      "back": "aspirar a / esforzarse por",
+      "phonetic": "/stri·mít·sa/",
+      "example": "Нужно стремиться к совершенству.",
+      "exampleTranslation": "Hay que aspirar a la perfección.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "motivación"]
+    },
+    {
+      "front": "преодолевать",
+      "back": "superar / vencer (dificultades)",
+      "phonetic": "/pri·a·da·li·vát'/",
+      "example": "Ей удалось преодолеть все препятствия.",
+      "exampleTranslation": "Ella logró superar todos los obstáculos.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "logro"]
+    },
+    {
+      "front": "воздействовать",
+      "back": "influir / actuar sobre",
+      "phonetic": "/vaz·dé·jst·va·vat'/",
+      "example": "Реклама воздействует на потребителей.",
+      "exampleTranslation": "La publicidad influye en los consumidores.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "influencia"]
+    },
+    {
+      "front": "обусловливать",
+      "back": "condicionar / determinar",
+      "phonetic": "/a·bus·lóv·li·vat'/",
+      "example": "Климат обусловливает особенности культуры.",
+      "exampleTranslation": "El clima condiciona las particularidades de la cultura.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "académico"]
+    },
+    {
+      "front": "последствие",
+      "back": "consecuencia / secuela",
+      "phonetic": "/pás·lid·stvi·ye/",
+      "example": "Каковы последствия этого решения?",
+      "exampleTranslation": "¿Cuáles son las consecuencias de esta decisión?",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["abstracto"]
+    },
+    {
+      "front": "противоречие",
+      "back": "contradicción",
+      "phonetic": "/pra·ti·va·ré·chi·ye/",
+      "example": "В его словах есть явное противоречие.",
+      "exampleTranslation": "Hay una clara contradicción en sus palabras.",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["abstracto", "lógica"]
+    },
+    {
+      "front": "закономерность",
+      "back": "regularidad / patrón",
+      "phonetic": "/za·ka·na·mér·nast'/",
+      "example": "Учёные выявили закономерность в данных.",
+      "exampleTranslation": "Los científicos identificaron un patrón en los datos.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["ciencia", "abstracto"]
+    },
+    {
+      "front": "предпосылка",
+      "back": "prerrequisito / premisa",
+      "phonetic": "/prid·pa·sýl·ka/",
+      "example": "Это важная предпосылка для успеха.",
+      "exampleTranslation": "Esta es una premisa importante para el éxito.",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["académico", "lógica"]
+    },
+    {
+      "front": "неоднозначный",
+      "back": "ambiguo / controvertido",
+      "phonetic": "/ni·ad·na·znách·nyj/",
+      "example": "Его ответ был весьма неоднозначным.",
+      "exampleTranslation": "Su respuesta fue bastante ambigua.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "discurso"]
+    },
+    {
+      "front": "исчерпывающий",
+      "back": "exhaustivo / completo",
+      "phonetic": "/is·chér·pi·va·yu·schij/",
+      "example": "Нужен исчерпывающий анализ ситуации.",
+      "exampleTranslation": "Se necesita un análisis exhaustivo de la situación.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "académico"]
+    },
+    {
+      "front": "весомый",
+      "back": "de peso / sólido (argumento)",
+      "phonetic": "/vi·só·myj/",
+      "example": "Приведите весомые аргументы.",
+      "exampleTranslation": "Aporte argumentos de peso.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "discurso"]
+    },
+    {
+      "front": "в частности",
+      "back": "en particular / concretamente",
+      "phonetic": "/f chást·nas·ti/",
+      "example": "Меня интересует, в частности, этот вопрос.",
+      "exampleTranslation": "Me interesa, en particular, esta cuestión.",
+      "partOfSpeech": "phrase",
+      "tags": ["conectores", "discurso"]
+    },
+    {
+      "front": "на первый взгляд",
+      "back": "a primera vista",
+      "phonetic": "/na pér·vyj vzglyad/",
+      "example": "На первый взгляд задача проста.",
+      "exampleTranslation": "A primera vista la tarea parece simple.",
+      "partOfSpeech": "phrase",
+      "tags": ["frases", "discurso"]
+    },
+    {
+      "front": "что касается",
+      "back": "en cuanto a / respecto a",
+      "phonetic": "/shto ka·sá·ye·tsa/",
+      "example": "Что касается бюджета, нужно экономить.",
+      "exampleTranslation": "En cuanto al presupuesto, hay que ahorrar.",
+      "partOfSpeech": "phrase",
+      "tags": ["conectores", "discurso"]
+    },
+    {
+      "front": "справедливо отметить",
+      "back": "es justo señalar / cabe señalar",
+      "phonetic": "/spra·vid·lí·va at·mé·tit'/",
+      "example": "Справедливо отметить, что это сложно.",
+      "exampleTranslation": "Cabe señalar que esto es complicado.",
+      "partOfSpeech": "phrase",
+      "tags": ["frases", "discurso", "académico"]
+    },
+    {
+      "front": "существенный",
+      "back": "sustancial / esencial",
+      "phonetic": "/su·schést·vin·nyj/",
+      "example": "Это существенное различие.",
+      "exampleTranslation": "Esta es una diferencia sustancial.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "académico"]
+    },
+    {
+      "front": "вследствие",
+      "back": "a raíz de / como resultado de",
+      "phonetic": "/fslét·stvi·ye/",
+      "example": "Вследствие ошибки проект был отложен.",
+      "exampleTranslation": "A raíz del error, el proyecto fue aplazado.",
+      "partOfSpeech": "preposition",
+      "tags": ["conectores", "formal"]
+    }
+  ]
+}

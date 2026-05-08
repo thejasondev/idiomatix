@@ -1,8 +1,15 @@
 ---
 import AppLayout from '@/layouts/AppLayout.astro'
 import ProgresoClient from '@/components/ProgresoClient'
+import { ErrorBoundary } from '@/components/ui'
 ---
 
-<AppLayout title="Progreso" activeNav="/progreso">
-  <ProgresoClient client:load />
+<AppLayout
+  title="Progreso"
+  description="Visualiza tu progreso: heatmap de actividad, racha diaria, estadísticas por idioma y métricas de retención."
+  activeNav="/progreso"
+>
+  <ErrorBoundary client:load moduleName="Progreso">
+    <ProgresoClient client:load />
+  </ErrorBoundary>
 </AppLayout>

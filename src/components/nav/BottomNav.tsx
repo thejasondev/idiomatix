@@ -13,7 +13,7 @@
 ────────────────────────────────────────────────────────────── */
 
 import { useEffect, useState, useRef } from 'react'
-import { Home, BookOpen, Dumbbell, GraduationCap, BarChart2 } from 'lucide-react'
+import { Home, BookOpen, Dumbbell, GraduationCap, BarChart2, Library, ClipboardCheck } from 'lucide-react'
 
 interface NavItem {
   href: string
@@ -24,8 +24,10 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { href: '/',            label: 'Inicio',    icon: Home          },
   { href: '/vocabulario', label: 'Vocab',     icon: BookOpen      },
-  { href: '/practicar',   label: 'Practicar', icon: Dumbbell      },
+  { href: '/lectura',     label: 'Lectura',   icon: Library       },
   { href: '/gramatica',   label: 'Gramática', icon: GraduationCap },
+  { href: '/practicar',   label: 'Practicar', icon: Dumbbell      },
+  { href: '/examen',      label: 'Examen',    icon: ClipboardCheck},
   { href: '/progreso',    label: 'Progreso',  icon: BarChart2     },
 ]
 
@@ -37,12 +39,34 @@ export default function BottomNav({ activeNav = '/' }: Props) {
   const [current, setCurrent] = useState(activeNav)
   const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0, opacity: 0 })
   const [tapped, setTapped] = useState<string | null>(null)
+  const [hidden, setHidden] = useState(false)
   const itemRefs = useRef<(HTMLAnchorElement | null)[]>([])
   const navRef = useRef<HTMLElement>(null)
+  const lastScrollY = useRef(0)
 
-  // Sync with URL on client
+  // Sync with URL on client + after View Transition swaps
   useEffect(() => {
     setCurrent(window.location.pathname)
+
+    const onSwap = () => setCurrent(window.location.pathname)
+    document.addEventListener('astro:after-swap', onSwap)
+    return () => document.removeEventListener('astro:after-swap', onSwap)
+  }, [])
+
+  // Scroll-aware: hide on scroll down, show on scroll up
+  useEffect(() => {
+    const THRESHOLD = 12 // px of scroll before toggling
+    const handleScroll = () => {
+      const y = window.scrollY
+      if (y > lastScrollY.current + THRESHOLD) {
+        setHidden(true)
+      } else if (y < lastScrollY.current - THRESHOLD) {
+        setHidden(false)
+      }
+      lastScrollY.current = y
+    }
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   // Animate indicator to active item
@@ -82,7 +106,7 @@ export default function BottomNav({ activeNav = '/' }: Props) {
       {/* ── The nav pill ── */}
       <nav
         ref={navRef}
-        className="lg-nav"
+        className={`lg-nav ${hidden ? 'lg-nav--hidden' : ''}`}
         role="navigation"
         aria-label="Navegación principal"
       >
@@ -154,6 +178,10 @@ export default function BottomNav({ activeNav = '/' }: Props) {
           /* Isolation for mix-blend-mode children */
           isolation: isolate;
 
+          /* Scroll-aware transition */
+          transition: transform 320ms cubic-bezier(0.4, 0, 0.2, 1),
+                      opacity 320ms ease;
+
           /* Elevation shadow — layered for depth */
           box-shadow:
             0 0 0 0.5px rgba(255,255,255,0.12),
@@ -161,6 +189,13 @@ export default function BottomNav({ activeNav = '/' }: Props) {
             0 8px 24px rgba(0,0,0,0.22),
             0 20px 48px rgba(0,0,0,0.16),
             inset 0 0.5px 0 rgba(255,255,255,0.18);
+        }
+
+        /* Scroll-aware: slide down + fade when user scrolls down */
+        .lg-nav--hidden {
+          transform: translateX(-50%) translateY(calc(100% + 24px));
+          opacity: 0;
+          pointer-events: none;
         }
 
         /* ── Glass system ───────────────────────────── */

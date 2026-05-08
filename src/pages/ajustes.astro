@@ -1,8 +1,15 @@
 ---
 import AppLayout from '@/layouts/AppLayout.astro'
 import AjustesClient from '@/components/AjustesClient'
+import { ErrorBoundary } from '@/components/ui'
 ---
 
-<AppLayout title="Ajustes" activeNav="/ajustes">
-  <AjustesClient client:load />
+<AppLayout
+  title="Ajustes"
+  description="Configura tu experiencia: tema visual, idiomas activos, límites diarios de tarjetas y gestión de datos."
+  activeNav="/ajustes"
+>
+  <ErrorBoundary client:load moduleName="Ajustes">
+    <AjustesClient client:load />
+  </ErrorBoundary>
 </AppLayout>

@@ -1,0 +1,196 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Ruso C1 — Avanzado",
+    "description": "Vocabulario de nivel C1 del ruso. Expresiones idiomáticas, registro académico, matices de significado y vocabulario para debates de alta complejidad.",
+    "lang": "ru",
+    "level": "C1",
+    "source": "builtin",
+    "tags": ["builtin", "C1", "avanzado"]
+  },
+  "cards": [
+    {
+      "front": "бить баклуши",
+      "back": "holgazanear / no hacer nada",
+      "phonetic": "/bít' bak·lú·shi/",
+      "example": "Хватит бить баклуши, пора работать!",
+      "exampleTranslation": "¡Basta de holgazanear, es hora de trabajar!",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "coloquial"]
+    },
+    {
+      "front": "брать за живое",
+      "back": "tocar la fibra sensible / herir en lo vivo",
+      "phonetic": "/brát' za zhi·vó·ye/",
+      "example": "Эта история берёт за живое.",
+      "exampleTranslation": "Esta historia toca la fibra sensible.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "emociones"]
+    },
+    {
+      "front": "на злобу дня",
+      "back": "de actualidad / del momento",
+      "phonetic": "/na zló·bu dnya/",
+      "example": "Статья на злобу дня привлекла внимание.",
+      "exampleTranslation": "El artículo de actualidad atrajo la atención.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "medios"]
+    },
+    {
+      "front": "невзирая на",
+      "back": "a pesar de / haciendo caso omiso de",
+      "phonetic": "/niv·zi·rá·ya na/",
+      "example": "Невзирая на трудности, он добился цели.",
+      "exampleTranslation": "A pesar de las dificultades, alcanzó su objetivo.",
+      "partOfSpeech": "preposition",
+      "tags": ["formal", "conectores"]
+    },
+    {
+      "front": "соразмерный",
+      "back": "proporcional / adecuado",
+      "phonetic": "/sa·raz·mér·nyj/",
+      "example": "Наказание должно быть соразмерным проступку.",
+      "exampleTranslation": "El castigo debe ser proporcional a la falta.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "académico", "derecho"]
+    },
+    {
+      "front": "изощрённый",
+      "back": "sofisticado / refinado / ingenioso",
+      "phonetic": "/i·za·schrón·nyj/",
+      "example": "Это изощрённый план.",
+      "exampleTranslation": "Es un plan ingenioso.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "sofisticado"]
+    },
+    {
+      "front": "пресловутый",
+      "back": "el famoso / el susodicho (irónico)",
+      "phonetic": "/pris·la·vú·tyj/",
+      "example": "Вот и пресловутое решение проблемы.",
+      "exampleTranslation": "Aquí está la famosa solución al problema.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "estilo", "ironía"]
+    },
+    {
+      "front": "неотъемлемый",
+      "back": "inalienable / inseparable",
+      "phonetic": "/ni·at·yém·li·myj/",
+      "example": "Свобода — неотъемлемое право человека.",
+      "exampleTranslation": "La libertad es un derecho inalienable del ser humano.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "formal", "derecho"]
+    },
+    {
+      "front": "нивелировать",
+      "back": "nivelar / igualar / neutralizar",
+      "phonetic": "/ni·vi·lí·ra·vat'/",
+      "example": "Это нивелирует все достижения команды.",
+      "exampleTranslation": "Esto neutraliza todos los logros del equipo.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "académico"]
+    },
+    {
+      "front": "апеллировать",
+      "back": "apelar / hacer referencia a",
+      "phonetic": "/a·pi·llí·ra·vat'/",
+      "example": "Он апеллировал к здравому смыслу.",
+      "exampleTranslation": "Apeló al sentido común.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "discurso", "derecho"]
+    },
+    {
+      "front": "фигурировать",
+      "back": "figurar / aparecer (en un documento)",
+      "phonetic": "/fi·gu·rí·ra·vat'/",
+      "example": "Его имя фигурирует в деле.",
+      "exampleTranslation": "Su nombre figura en el expediente.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "formal"]
+    },
+    {
+      "front": "мировоззрение",
+      "back": "cosmovisión / visión del mundo",
+      "phonetic": "/mi·ra·vaz·zré·ni·ye/",
+      "example": "Путешествия расширяют мировоззрение.",
+      "exampleTranslation": "Los viajes amplían la cosmovisión.",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["filosofía", "abstracto"]
+    },
+    {
+      "front": "умозаключение",
+      "back": "conclusión / inferencia",
+      "phonetic": "/u·ma·zak·lyú·chi·ni·ye/",
+      "example": "К какому умозаключению ты пришёл?",
+      "exampleTranslation": "¿A qué conclusión llegaste?",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["lógica", "académico"]
+    },
+    {
+      "front": "злоупотребление",
+      "back": "abuso / uso indebido",
+      "phonetic": "/zla·up·trib·lé·ni·ye/",
+      "example": "Злоупотребление властью недопустимо.",
+      "exampleTranslation": "El abuso de poder es inaceptable.",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["derecho", "política"]
+    },
+    {
+      "front": "вопреки",
+      "back": "en contra de / a despecho de",
+      "phonetic": "/vap·ri·kí/",
+      "example": "Вопреки ожиданиям, результат был хорошим.",
+      "exampleTranslation": "En contra de las expectativas, el resultado fue bueno.",
+      "partOfSpeech": "preposition",
+      "tags": ["conectores", "formal"]
+    },
+    {
+      "front": "по сей день",
+      "back": "hasta hoy / hasta la fecha",
+      "phonetic": "/pa syej dyen'/",
+      "example": "Эта традиция сохраняется по сей день.",
+      "exampleTranslation": "Esta tradición se mantiene hasta hoy.",
+      "partOfSpeech": "phrase",
+      "tags": ["tiempo", "frases"]
+    },
+    {
+      "front": "с оговоркой",
+      "back": "con la salvedad de / con la condición de",
+      "phonetic": "/s a·ga·vór·kaj/",
+      "example": "Согласен, но с оговоркой.",
+      "exampleTranslation": "De acuerdo, pero con una salvedad.",
+      "partOfSpeech": "phrase",
+      "tags": ["discurso", "frases"]
+    },
+    {
+      "front": "впоследствии",
+      "back": "posteriormente / con el tiempo",
+      "phonetic": "/fpas·léd·stvi·i/",
+      "example": "Впоследствии выяснилась правда.",
+      "exampleTranslation": "Posteriormente salió a la luz la verdad.",
+      "partOfSpeech": "adverb",
+      "tags": ["tiempo", "discurso"]
+    },
+    {
+      "front": "самодостаточный",
+      "back": "autosuficiente / independiente",
+      "phonetic": "/sa·ma·das·tá·tach·nyj/",
+      "example": "Она самодостаточный человек.",
+      "exampleTranslation": "Ella es una persona autosuficiente.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "carácter"]
+    },
+    {
+      "front": "благоприятствовать",
+      "back": "favorecer / propiciar",
+      "phonetic": "/bla·ga·pri·yát·stba·vat'/",
+      "example": "Условия благоприятствуют развитию бизнеса.",
+      "exampleTranslation": "Las condiciones favorecen el desarrollo empresarial.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "formal"]
+    }
+  ]
+}

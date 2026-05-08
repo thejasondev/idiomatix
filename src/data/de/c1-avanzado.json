@@ -1,0 +1,196 @@
+{
+  "version": "1.0",
+  "deck": {
+    "name": "Alemán C1 — Avanzado",
+    "description": "Vocabulario C1 del alemán. Refranes, compuestos idiomáticos, registro académico y literario, y vocabulario para argumentación sofisticada.",
+    "lang": "de",
+    "level": "C1",
+    "source": "builtin",
+    "tags": ["builtin", "C1", "avanzado"]
+  },
+  "cards": [
+    {
+      "front": "Eulen nach Athen tragen",
+      "back": "llevar leña al monte / dar lo que sobra",
+      "phonetic": "/óy·len nach á·ten trá·gen/",
+      "example": "Das wäre, als würde man Eulen nach Athen tragen.",
+      "exampleTranslation": "Sería como llevar leña al monte.",
+      "partOfSpeech": "phrase",
+      "tags": ["refranes", "idiomático", "C1"]
+    },
+    {
+      "front": "den Nagel auf den Kopf treffen",
+      "back": "dar en el clavo",
+      "phonetic": "/den ná·gel auf den kopf tréf·fen/",
+      "example": "Du hast den Nagel auf den Kopf getroffen.",
+      "exampleTranslation": "Diste en el clavo.",
+      "partOfSpeech": "phrase",
+      "tags": ["idiomático", "C1"]
+    },
+    {
+      "front": "ungeachtet",
+      "back": "sin tener en cuenta / a pesar de",
+      "phonetic": "/un·ge·ách·tet/",
+      "example": "Ungeachtet der Schwierigkeiten gelang es ihm.",
+      "exampleTranslation": "A pesar de las dificultades, lo logró.",
+      "partOfSpeech": "preposition",
+      "tags": ["conectores", "formal", "C1"]
+    },
+    {
+      "front": "verhältnismäßig",
+      "back": "proporcionalmente / relativamente",
+      "phonetic": "/fer·hélt·nis·mä·ssig/",
+      "example": "Die Strafe ist verhältnismäßig.",
+      "exampleTranslation": "La sanción es proporcionada.",
+      "partOfSpeech": "adverb",
+      "tags": ["adverbios", "C1", "derecho"]
+    },
+    {
+      "front": "unabdingbar",
+      "back": "ineludible / imprescindible",
+      "phonetic": "/un·áp·ding·bar/",
+      "example": "Gegenseitiges Vertrauen ist unabdingbar.",
+      "exampleTranslation": "La confianza mutua es imprescindible.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "C1", "formal"]
+    },
+    {
+      "front": "präzedenzlos",
+      "back": "sin precedentes",
+      "phonetic": "/prä·tse·dénts·los/",
+      "example": "Eine präzedenzlose Entscheidung.",
+      "exampleTranslation": "Una decisión sin precedentes.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "C1", "formal"]
+    },
+    {
+      "front": "nivellieren",
+      "back": "nivelar / igualar",
+      "phonetic": "/ni·vel·lí·ren/",
+      "example": "Das nivelliert alle Unterschiede.",
+      "exampleTranslation": "Eso nivela todas las diferencias.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "C1"]
+    },
+    {
+      "front": "appellieren",
+      "back": "apelar / hacer un llamamiento",
+      "phonetic": "/a·pe·llí·ren/",
+      "example": "Er appellierte an den gesunden Menschenverstand.",
+      "exampleTranslation": "Apeló al sentido común.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "discurso", "C1"]
+    },
+    {
+      "front": "das Weltbild",
+      "back": "la cosmovisión / la imagen del mundo",
+      "phonetic": "/das vélt·bild/",
+      "example": "Reisen erweitern das Weltbild.",
+      "exampleTranslation": "Los viajes amplían la cosmovisión.",
+      "partOfSpeech": "noun",
+      "gender": "N",
+      "tags": ["filosofía", "C1"]
+    },
+    {
+      "front": "der Schlussfolgerung",
+      "back": "la conclusión / la inferencia",
+      "phonetic": "/der shlús·fol·ge·rung/",
+      "example": "Zu welcher Schlussfolgerung gelangst du?",
+      "exampleTranslation": "¿A qué conclusión llegas?",
+      "partOfSpeech": "noun",
+      "gender": "F",
+      "tags": ["lógica", "académico"]
+    },
+    {
+      "front": "der Missbrauch",
+      "back": "el abuso / el mal uso",
+      "phonetic": "/der mís·brauch/",
+      "example": "Missbrauch von Macht ist inakzeptabel.",
+      "exampleTranslation": "El abuso de poder es inaceptable.",
+      "partOfSpeech": "noun",
+      "gender": "M",
+      "tags": ["derecho", "C1"]
+    },
+    {
+      "front": "entgegen",
+      "back": "en contra de / a pesar de",
+      "phonetic": "/ent·gé·gen/",
+      "example": "Entgegen den Erwartungen war es ein Erfolg.",
+      "exampleTranslation": "En contra de las expectativas, fue un éxito.",
+      "partOfSpeech": "preposition",
+      "tags": ["conectores", "C1"]
+    },
+    {
+      "front": "bis dato",
+      "back": "hasta la fecha / hasta ahora",
+      "phonetic": "/bis dá·to/",
+      "example": "Das ist bis dato nicht geschehen.",
+      "exampleTranslation": "Hasta la fecha eso no ha ocurrido.",
+      "partOfSpeech": "phrase",
+      "tags": ["tiempo", "C1"]
+    },
+    {
+      "front": "mit der Einschränkung",
+      "back": "con la salvedad de",
+      "phonetic": "/mit der ayn·schrenk·ung/",
+      "example": "Ich stimme zu, mit der Einschränkung, dass…",
+      "exampleTranslation": "Estoy de acuerdo, con la salvedad de que…",
+      "partOfSpeech": "phrase",
+      "tags": ["discurso", "C1"]
+    },
+    {
+      "front": "im Nachhinein",
+      "back": "a posteriori / en retrospectiva",
+      "phonetic": "/im nach·hí·nayn/",
+      "example": "Im Nachhinein war die Entscheidung falsch.",
+      "exampleTranslation": "En retrospectiva, la decisión fue errónea.",
+      "partOfSpeech": "phrase",
+      "tags": ["tiempo", "discurso", "C1"]
+    },
+    {
+      "front": "selbstgenügsam",
+      "back": "autosuficiente",
+      "phonetic": "/zélbst·ge·nük·sam/",
+      "example": "Er ist ein selbstgenügsamer Mensch.",
+      "exampleTranslation": "Es una persona autosuficiente.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "carácter", "C1"]
+    },
+    {
+      "front": "begünstigen",
+      "back": "favorecer / propiciar",
+      "phonetic": "/be·güns·ti·gen/",
+      "example": "Die Bedingungen begünstigen das Wachstum.",
+      "exampleTranslation": "Las condiciones favorecen el crecimiento.",
+      "partOfSpeech": "verb",
+      "tags": ["verbos", "formal", "C1"]
+    },
+    {
+      "front": "unumgänglich",
+      "back": "inevitable / ineludible",
+      "phonetic": "/un·um·gäng·lich/",
+      "example": "Eine Änderung ist unumgänglich.",
+      "exampleTranslation": "Un cambio es inevitable.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "C1"]
+    },
+    {
+      "front": "nachhaltig",
+      "back": "sostenible / duradero / con impacto lasting",
+      "phonetic": "/nach·hal·tich/",
+      "example": "Wir brauchen nachhaltige Lösungen.",
+      "exampleTranslation": "Necesitamos soluciones sostenibles.",
+      "partOfSpeech": "adjective",
+      "tags": ["adjetivos", "ecología", "C1"]
+    },
+    {
+      "front": "verknüpft mit",
+      "back": "vinculado a / ligado con",
+      "phonetic": "/fer·knüpft mit/",
+      "example": "Das ist eng verknüpft mit der Geschichte.",
+      "exampleTranslation": "Está estrechamente vinculado con la historia.",
+      "partOfSpeech": "phrase",
+      "tags": ["formal", "C1"]
+    }
+  ]
+}
