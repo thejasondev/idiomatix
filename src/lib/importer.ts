@@ -6,6 +6,7 @@
 
 import type { VocabCard, Deck, LanguageCode, CEFRLevel, ImportResult } from '@/types'
 import { CEFR_LEVELS } from '@/types'
+import * as XLSX from 'xlsx'
 
 // ─── Idiomatix JSON format ────────────────────────────────────
 
@@ -65,17 +66,27 @@ function parseDelimited(
 
     const idx = (col: string) => headers.indexOf(col)
 
-    const frontIdx = idx('front')
-    const backIdx = idx('back')
+    let frontIdx = idx('front')
+    let backIdx = idx('back')
+    let startIndex = 1
+
+    // Fallback if explicit headers are missing: assume col 0 is front, col 1 is back
     if (frontIdx === -1 || backIdx === -1) {
-      throw new Error('Se requieren columnas "front" y "back"')
+      const firstLineCols = headerLine.split(delimiter)
+      if (firstLineCols.length >= 2) {
+        frontIdx = 0
+        backIdx = 1
+        startIndex = 0 // first row is data
+      } else {
+        throw new Error('Se requieren al menos 2 columnas o cabeceras "front" y "back"')
+      }
     }
 
     const now = Date.now()
     const deckId = crypto.randomUUID()
 
     const cards: VocabCard[] = []
-    for (let i = 1; i < lines.length; i++) {
+    for (let i = startIndex; i < lines.length; i++) {
       const line = lines[i]
       if (!line) continue
       const cols = line.split(delimiter)
@@ -144,25 +155,130 @@ export function importTSV(raw: string, deckName: string, defaultLang?: LanguageC
   return parseDelimited(raw, '\t', deckName, defaultLang)
 }
 
+// ─── Array / XLSX parser ───────────────────────────────────────
+
+function importArrays(
+  rows: any[][],
+  deckName: string,
+  defaultLang: LanguageCode = 'en'
+): { deck: Deck; cards: VocabCard[] } | null {
+  try {
+    if (rows.length === 0) throw new Error('El archivo está vacío')
+    
+    // Check if first row is header
+    const headers = rows[0].map(h => String(h || '').trim().toLowerCase())
+    const idx = (col: string) => headers.indexOf(col)
+    
+    let frontIdx = idx('front')
+    let backIdx = idx('back')
+    let startIndex = 1
+
+    if (frontIdx === -1 || backIdx === -1) {
+      if (rows[0].length >= 2) {
+        frontIdx = 0
+        backIdx = 1
+        startIndex = 0
+      } else {
+        throw new Error('Se requieren al menos 2 columnas')
+      }
+    }
+
+    const now = Date.now()
+    const deckId = crypto.randomUUID()
+    const cards: VocabCard[] = []
+
+    for (let i = startIndex; i < rows.length; i++) {
+      const row = rows[i]
+      if (!row || row.length === 0) continue
+
+      const front = String(row[frontIdx] || '').trim()
+      const back = String(row[backIdx] || '').trim()
+      if (!front || !back) continue
+
+      const rawLang = String(row[idx('lang')] || '').trim().toLowerCase() || defaultLang
+      const lang = (['ru', 'de', 'en'].includes(rawLang) ? rawLang : defaultLang) as LanguageCode
+
+      const rawLevel = String(row[idx('level')] || '').trim().toUpperCase() || 'A1'
+      const level = (CEFR_LEVELS.includes(rawLevel as CEFRLevel) ? rawLevel : 'A1') as CEFRLevel
+
+      const tagsRaw = String(row[idx('tags')] || '').trim()
+      const tags = tagsRaw ? tagsRaw.split('|').map(t => t.trim()) : []
+
+      cards.push({
+        id: crypto.randomUUID(),
+        deckId,
+        lang,
+        level,
+        front,
+        back,
+        phonetic: row[idx('phonetic')] ? String(row[idx('phonetic')]).trim() : undefined,
+        example: row[idx('example')] ? String(row[idx('example')]).trim() : undefined,
+        exampleTranslation: row[idx('exampletranslation')] ? String(row[idx('exampletranslation')]).trim() : undefined,
+        partOfSpeech: row[idx('partofspeech')] ? (String(row[idx('partofspeech')]).trim() as VocabCard['partOfSpeech']) : undefined,
+        tags,
+        createdAt: now,
+        updatedAt: now,
+      })
+    }
+
+    if (cards.length === 0) throw new Error('No se encontraron tarjetas válidas')
+
+    const langCount: Record<string, number> = {}
+    cards.forEach(c => { langCount[c.lang] = (langCount[c.lang] ?? 0) + 1 })
+    const dominantLang = (Object.entries(langCount).sort((a, b) => b[1] - a[1])[0]?.[0] ?? defaultLang) as LanguageCode
+
+    const deck: Deck = {
+      id: deckId,
+      name: deckName,
+      lang: dominantLang,
+      level: cards[0]?.level ?? 'A1',
+      source: 'imported',
+      cardCount: cards.length,
+      tags: [],
+      createdAt: now,
+      updatedAt: now,
+    }
+
+    return { deck, cards }
+  } catch {
+    return null
+  }
+}
+
 // ─── Main entry point ─────────────────────────────────────────
 
-export type SupportedFormat = 'idiomatix-json' | 'csv' | 'tsv'
+export type SupportedFormat = 'idiomatix-json' | 'csv' | 'tsv' | 'xlsx'
 
 export async function importDeck(
   file: File,
-  options: { defaultLang?: LanguageCode } = {}
+  options: { defaultLang?: LanguageCode; customName?: string } = {}
 ): Promise<{ result: ImportResult; deck?: Deck; cards?: VocabCard[] }> {
-  const raw = await file.text()
-  const name = file.name.replace(/\.[^/.]+$/, '') // strip extension
+  const name = options.customName?.trim() || file.name.replace(/\.[^/.]+$/, '') // strip extension
 
   let parsed: { deck: Deck; cards: VocabCard[] } | null = null
 
   if (file.name.endsWith('.json')) {
+    const raw = await file.text()
     parsed = importIdiomatixJSON(raw)
   } else if (file.name.endsWith('.csv')) {
+    const raw = await file.text()
     parsed = importCSV(raw, name, options.defaultLang)
   } else if (file.name.endsWith('.tsv') || file.name.endsWith('.txt')) {
+    const raw = await file.text()
     parsed = importTSV(raw, name, options.defaultLang)
+  } else if (file.name.endsWith('.xlsx') || file.name.endsWith('.xls')) {
+    try {
+      const buffer = await file.arrayBuffer()
+      const workbook = XLSX.read(buffer, { type: 'array' })
+      const firstSheetName = workbook.SheetNames[0]
+      if (firstSheetName) {
+        const firstSheet = workbook.Sheets[firstSheetName!]
+        const rows = XLSX.utils.sheet_to_json<any[]>(firstSheet, { header: 1 })
+        parsed = importArrays(rows, name, options.defaultLang)
+      }
+    } catch (e) {
+      console.error('Error parsing Excel file', e)
+    }
   } else {
     return {
       result: {

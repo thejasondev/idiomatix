@@ -93,7 +93,7 @@ export default function PracticarClient() {
       {decks.length === 0 ? (
         <EmptyState icon={<BookOpen size={32} strokeWidth={1} />} title="No hay mazos"
           description="Importa un mazo o espera a que se carguen los integrados."
-          action={<Button variant="ghost" size="sm" onClick={() => (window.location.href = '/vocabulario/importar')}>Importar mazo</Button>} />
+          action={<Button variant="ghost" size="sm" onClick={() => (window.location.href = '/importar')}>Importar mazo</Button>} />
       ) : (
         <div className="prac-decks">
           {decks.map(deck => <DeckCard key={deck.id} deck={deck} mode={studyMode} onStart={handleStartSession} />)}

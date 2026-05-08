@@ -5,7 +5,7 @@
 
 import { useState, useCallback, useRef } from 'react'
 import { Upload, FileText, CheckCircle, AlertCircle, ChevronLeft } from 'lucide-react'
-import { SectionHeader, Button, Badge } from '@/components/ui'
+import { SectionHeader, Button, Badge, Modal } from '@/components/ui'
 import { useImportDeck } from '@/hooks'
 import { LANGUAGES, type LanguageCode } from '@/types'
 
@@ -19,10 +19,27 @@ export default function ImportClient() {
   const fileInputRef = useRef<HTMLInputElement>(null)
   const { importFile } = useImportDeck()
 
-  const processFile = useCallback(async (file: File) => {
+  const [renameModal, setRenameModal] = useState<{ open: boolean; currentName: string; file: File | null }>({
+    open: false, currentName: '', file: null
+  })
+
+  const processFile = useCallback((file: File) => {
+    const customName = file.name.replace(/\.[^/.]+$/, '')
+    setRenameModal({ open: true, currentName: customName, file })
+  }, [])
+
+  const handleConfirmImport = useCallback(async () => {
+    const { file, currentName } = renameModal
+    setRenameModal(prev => ({ ...prev, open: false }))
+    if (!file) {
+      setPhase('idle')
+      return
+    }
+
     setPhase('importing')
     setErrorMsg('')
-    const ok = await importFile(file, defaultLang)
+    const finalName = currentName.trim() || file.name.replace(/\.[^/.]+$/, '')
+    const ok = await importFile(file, defaultLang, finalName)
     if (ok) {
       // Extract count from success — hook already called showToast,
       // we just need to reflect in UI
@@ -32,7 +49,7 @@ export default function ImportClient() {
       setErrorMsg('El archivo no pudo ser procesado. Verifica el formato.')
       setPhase('error')
     }
-  }, [importFile, defaultLang])
+  }, [renameModal, importFile, defaultLang])
 
   const handleDrop = useCallback((e: React.DragEvent) => {
     e.preventDefault()
@@ -90,7 +107,7 @@ export default function ImportClient() {
           <input
             ref={fileInputRef}
             type="file"
-            accept=".json,.csv,.tsv,.txt"
+            accept=".json,.csv,.tsv,.txt,.xlsx,.xls"
             className="imp-file-input"
             onChange={handleFileInput}
             aria-hidden="true"
@@ -105,6 +122,7 @@ export default function ImportClient() {
             <Badge variant="neutral">CSV</Badge>
             <Badge variant="neutral">TSV</Badge>
             <Badge variant="neutral">TXT</Badge>
+            <Badge variant="neutral">XLSX</Badge>
           </div>
         </div>
       )}
@@ -167,6 +185,7 @@ export default function ImportClient() {
         <div className="imp-guide__format">
           <div className="imp-guide__format-header">
             <Badge variant="neutral">CSV / TSV</Badge>
+            <Badge variant="neutral">XLSX</Badge>
             <span className="imp-guide__format-name">Compatible con Excel, Google Sheets, Quizlet</span>
           </div>
           <pre className="imp-guide__code">{`front,back,phonetic,lang,level,tags
@@ -175,6 +194,27 @@ Hallo,hola,,de,A1,saludos`}</pre>
           <p className="imp-guide__note">Columnas requeridas: <code>front</code>, <code>back</code>. El resto son opcionales.</p>
         </div>
       </div>
+
+      <Modal open={renameModal.open} onClose={() => { setRenameModal(prev => ({ ...prev, open: false })); setPhase('idle'); }} title="Nombre del mazo">
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+          <p style={{ fontSize: 13, color: 'var(--text-secondary)', lineHeight: 1.5 }}>
+            Verifica el nombre del mazo antes de añadirlo a tu biblioteca.
+          </p>
+          <input
+            type="text"
+            value={renameModal.currentName}
+            onChange={e => setRenameModal(prev => ({ ...prev, currentName: e.target.value }))}
+            className="rename-input"
+            autoFocus
+            onKeyDown={e => { if (e.key === 'Enter') handleConfirmImport() }}
+            placeholder="Ej: Ruso Esencial"
+          />
+          <div style={{ display: 'flex', gap: 8, marginTop: 4 }}>
+            <Button variant="ghost" onClick={() => { setRenameModal(prev => ({ ...prev, open: false })); setPhase('idle'); }} fullWidth>Cancelar</Button>
+            <Button onClick={handleConfirmImport} fullWidth>Importar</Button>
+          </div>
+        </div>
+      </Modal>
 
       <style>{STYLES}</style>
     </div>
@@ -260,4 +300,13 @@ const STYLES = `
   }
   .imp-guide__note { padding: 8px 14px; font-size: 11px; color: var(--text-muted); }
   .imp-guide__note code { font-family: var(--font-mono); color: var(--text-secondary); }
+
+  .rename-input {
+    width: 100%; padding: 10px 12px;
+    background: var(--bg-elevated); border: 1px solid var(--border-default);
+    border-radius: var(--radius-md); color: var(--text-primary);
+    font-family: var(--font-body); font-size: 14px;
+    transition: border-color 150ms; outline: none;
+  }
+  .rename-input:focus { border-color: var(--verdant-500); }
 `

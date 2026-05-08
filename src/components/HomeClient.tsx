@@ -214,7 +214,7 @@ export default function HomeClient() {
             <Target size={18} strokeWidth={1.5} />
             <span>Examen CEFR</span>
           </a>
-          <a href="/vocabulario/importar" className="quick-btn">
+          <a href="/importar" className="quick-btn">
             <Plus size={18} strokeWidth={1.5} />
             <span>Importar mazo</span>
           </a>

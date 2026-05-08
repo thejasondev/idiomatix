@@ -81,6 +81,7 @@ export interface Deck {
   source: DeckSource
   cardCount: number
   tags: string[]
+  order?: number
   createdAt: number
   updatedAt: number
 }

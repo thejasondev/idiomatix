@@ -181,12 +181,12 @@ export function useImportDeck() {
   const [error, setError] = useState<string | null>(null)
   const { showToast } = useUIStore()
 
-  const importFile = useCallback(async (file: File, defaultLang?: LanguageCode) => {
+  const importFile = useCallback(async (file: File, defaultLang?: LanguageCode, customName?: string) => {
     setImporting(true)
     setError(null)
     try {
       const { importDeck } = await import('@/lib/importer')
-      const { result, deck, cards } = await importDeck(file, { defaultLang })
+      const { result, deck, cards } = await importDeck(file, { defaultLang, customName })
 
       if (!result.success || !deck || !cards) {
         const msg = result.errors[0] ?? 'Error desconocido al importar'
