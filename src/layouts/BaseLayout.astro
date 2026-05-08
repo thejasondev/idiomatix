@@ -64,6 +64,16 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? 'https://idiomati
     <!-- View Transitions — SPA-like navigation without full reloads -->
     <ClientRouter />
 
+    <!-- PWA Service Worker Registration -->
+    <script is:inline>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js', { scope: '/' })
+            .catch(function(err) { console.error('SW Error:', err) })
+        })
+      }
+    </script>
+
     <!-- Theme init script — runs before first paint to avoid flash -->
     <script is:inline>
       ;(function () {
